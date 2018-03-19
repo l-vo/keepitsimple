@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>Keep it simple. Stupid.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="A developer&apos;s blog on PHP, docker, git and more !">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Keep it simple. Stupid.">
+<meta property="og:url" content="http://keepitsimple.l-vo.fr/index.html">
+<meta property="og:site_name" content="Keep it simple. Stupid.">
+<meta property="og:description" content="A developer&apos;s blog on PHP, docker, git and more !">
+<meta property="og:locale" content="fr-FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Keep it simple. Stupid.">
+<meta name="twitter:description" content="A developer&apos;s blog on PHP, docker, git and more !">
+  
+    <link rel="alternative" href="/atom.xml" title="Keep it simple. Stupid." type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-116065119-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/l-vo"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">Keep it simple. Stupid.</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor"></div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Accueil</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/a-propos">A propos</a>
+      
+      <a class="main-nav-link" href="/rechercher" id="search-link">Rechercher</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main">
+  
+    <article id="post-yaml-in_array" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2018/03/18/yaml-in_array/" class="article-date">
+  <time datetime="2018-03-18T20:40:13.000Z" itemprop="datePublished">18/03/2018</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/18/yaml-in_array/">YAML et in_array, mauvaise surprise</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>Je vais ici vous conter une petite mésaventure qui m’est arrivée sur une des applications de la société où je travaille. Nous avons un Yaml de configuration qui indique quels clients doivent passer par une action donnée. Le fichier a cette forme:<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">targetedCustomers:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">auchan</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">leclerc</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">geant</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">cora</span></span><br></pre></td></tr></table></figure></p>
+<p>Ensuite, rien d’extraordinaire, on utilise in_array pour tester si le client courant est concerné par l’action proposée:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Some stuff for parsing Yaml before</span></span><br><span class="line"><span class="comment">// $targetedCustomers is worth ['auchan', 'leclerc', 'geant', 'cora'] </span></span><br><span class="line"><span class="keyword">if</span> (in_array($currentCustomer, $targetedCustomers)) &#123;</span><br><span class="line">  <span class="comment">// Execute the action</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Jusque là tout va bien. Mais récemment nous avons ajouté le client “yes”. Drôle de nom pour un client vous allez me dire. Il n’empêche.</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">targetedCustomers:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">auchan</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">leclerc</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">geant</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">cora</span></span><br><span class="line"><span class="bullet">  -</span> <span class="literal">yes</span></span><br></pre></td></tr></table></figure>
+<p>Et tout d’un coup <strong>TOUS</strong> nos clients se sont mis à être elligibles pour l’action précédemment évoquée. Pas glop. Comment en est-on arrivé à ce résultat ?</p>
+<h2 id="Yaml-et-ses-valeurs-reservees"><a href="#Yaml-et-ses-valeurs-reservees" class="headerlink" title="Yaml et ses valeurs resérvées"></a>Yaml et ses valeurs resérvées</h2><p>En Yaml, certaines valeurs sont automatiquement converties. La chaine de caractères “true” (peu importe la casse) devient le booléan true. De même pour la chaine “on”. Et aussi pour la chaine “yes”. Tiens ça se précise. Donc une fois parsé, notre Yaml devient:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">print_r($targetedCustomers);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Array(</span></span><br><span class="line"><span class="comment">  [0] =&gt; auchan,</span></span><br><span class="line"><span class="comment">  [1] =&gt; leclerc,</span></span><br><span class="line"><span class="comment">  [2] =&gt; geant,</span></span><br><span class="line"><span class="comment">  [3] =&gt; cora,</span></span><br><span class="line"><span class="comment">  [4] =&gt; 1</span></span><br><span class="line"><span class="comment">)</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
+<p>Le premier reflèxe en voyant ce résultat est simplement de se dire que le client “yes” n’est pas dans le tableau donc ne sera jamais elligible. Sauf que le typage faible de php vient enfoncer le clou.</p>
+<h2 id="Les-joies-du-typage-dynamique-de-PHP"><a href="#Les-joies-du-typage-dynamique-de-PHP" class="headerlink" title="Les joies du typage dynamique de PHP"></a>Les joies du typage dynamique de PHP</h2><p>Une des premières caractéristiques de PHP est son typage dynamique. Une caractéristique qui a toujours fait de PHP un language un peu à part où se côtoient des bidouilleurs parfois même non informaticiens et des professionnels pour qui ce language n’a aucun secret. La fonction in_array accepte un troisième paramètre qui permet de faire la recherche dans un tableau en vérifiant aussi le type. Voyons donc ce qui ce passe si on ne vérifie pas le type (ce qui est le comportement par defaut):<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// strict mode</span></span><br><span class="line">$test = [<span class="string">"auchan"</span>, <span class="string">"leclerc"</span>, <span class="keyword">true</span>];</span><br><span class="line"><span class="comment">// in_array("lidl", $test, true) =&gt; false</span></span><br><span class="line"><span class="comment">// in_array("auchan", $test, true) =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// non strict mode (default behavior)</span></span><br><span class="line"><span class="comment">// in_array("lidl", $test) =&gt; true</span></span><br><span class="line">$test2 = [<span class="string">"auchan"</span>, <span class="string">"leclerc"</span>];</span><br><span class="line"><span class="comment">// in_array(true, $test2) =&gt; true</span></span><br></pre></td></tr></table></figure></p>
+<p>Lorsque l’on n’est pas en mode strict, la conversion est à double sens. Si une valeur du tableau convertie dans le type de la valeur à rechercher correspond, on retourne true (ce qui est prévisible). Ce à quoi on s’attend moins, c’est que si la valeur à rechercher convertie dans le type d’une des valeur du tableau correspond à cette valeur, on retourne true aussi. A garder à l’esprit pour éviter ce genre de mésaventure…</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+        <a data-url="http://keepitsimple.l-vo.fr/2018/03/18/yaml-in_array/" data-id="cjeyqgow2000101ny48e8kil8" class="article-share-link">Partager</a>
+        
+          <a href="http://keepitsimple.l-vo.fr/2018/03/18/yaml-in_array/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+  
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/18/yaml-in_array/">YAML et in_array, mauvaise surprise</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">mars 2018</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Laurent VOULLEMIER<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Accueil</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/a-propos" class="mobile-nav-link">A propos</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="Vers le haut"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+<script>
+  var disqus_shortname = 'keep-it-simple-stupid';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//ghsite.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+     var search_path = "search.xml";
+     if (search_path.length == 0) {
+     	search_path = "search.xml";
+     }
+     var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+</div>
+</body>
+</html>
