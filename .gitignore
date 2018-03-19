@@ -3,6 +3,3 @@
 
 # Docker files
 docker-compose.override.yml
-
-# Blog html files
-/public/
