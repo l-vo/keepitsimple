@@ -1,7 +1,5 @@
 FROM node
 
-ARG site_url='http:\/\/localhost:4000'
-
 RUN npm install hexo-cli -g
 RUN hexo init blog
 
@@ -16,7 +14,6 @@ RUN npm install hexo-generator-feed --save
 RUN npm install hexo-generator-search --save
 
 COPY _config.yml .
-RUN sed -i "s/\[:SITE_URL:\]/$site_url/" _config.yml
 
 # Personal banner
 COPY banner.jpg themes/paperbox/source/css/images/
