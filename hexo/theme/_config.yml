@@ -22,7 +22,7 @@ widgets:
 
 # Miscellaneous
 wx_block: false
-google_analytics:
+google_analytics: UA-116065119-1
 favicon:
 twitter:
 google_plus:
