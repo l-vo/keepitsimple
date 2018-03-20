@@ -12,6 +12,7 @@ RUN cd themes/paperbox && git checkout 821e8c8b63c4cc26a9f1b1add24d711923f2d60f
 RUN npm install
 RUN npm install hexo-generator-feed --save
 RUN npm install hexo-generator-search --save
+RUN npm install hexo-generator-seo-friendly-sitemap --save
 
 COPY _config.yml .
 
