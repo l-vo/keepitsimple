@@ -35,6 +35,11 @@ duoshuo_shortname:
 # Swiftype Search
 swiftype_key:
 
+# hexo-generator-search config
 search:
   path: search.xml
   field: post
+
+# hexo-generator-seo-friendly-sitemap config
+sitemap:
+    path: sitemap.xml
