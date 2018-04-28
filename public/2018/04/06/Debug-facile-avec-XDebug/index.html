@@ -15,13 +15,15 @@
 <meta property="og:site_name" content="Keep it simple. Stupid.">
 <meta property="og:description" content="Intéressons nous au debugging d’applications. Tout développeur en fait continuellement dans ses projects. Souvent de la façon la plus basique qui soit:1echo $myVar; exit(); Mais lorsque l’on a besoin">
 <meta property="og:locale" content="fr-FR">
-<meta property="og:updated_time" content="2018-04-15T11:34:18.000Z">
+<meta property="og:updated_time" content="2018-04-28T20:52:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Debug facile avec XDEBUG">
 <meta name="twitter:description" content="Intéressons nous au debugging d’applications. Tout développeur en fait continuellement dans ses projects. Souvent de la façon la plus basique qui soit:1echo $myVar; exit(); Mais lorsque l’on a besoin">
   
     <link rel="alternative" href="/atom.xml" title="Keep it simple. Stupid." type="application/atom+xml">
   
+  
+    <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" href="/css/style.css">
   
@@ -111,7 +113,7 @@ ga('send', 'pageview');
       
         
         <p>Intéressons nous au debugging d’applications. Tout développeur en fait continuellement dans ses projects. Souvent de la façon la plus basique qui soit:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> $myVar; <span class="keyword">exit</span>();</span><br></pre></td></tr></table></figure></p>
-<p>Mais lorsque l’on a besoin de suivre l’execution dans une pile de plusieurs fonctions et à l’intérieur de chacune d’elle visualiser plusieurs variables pour connaitre le contexte, la méthode ci-dessus ne suffit plus. C’est là qu’intervient XDEBUG.</p>
+<p>Mais lorsque l’on a besoin de suivre l’execution dans une pile de plusieurs fonctions et à l’intérieur de chacune d’elle visualiser plusieurs variables pour connaitre le contexte, la méthode ci-dessus ne suffit plus. C’est là qu’intervient XDEBUG.<br><a id="more"></a></p>
 <h2 id="Quand-utiliser-XDEBUG"><a href="#Quand-utiliser-XDEBUG" class="headerlink" title="Quand utiliser XDEBUG ?"></a>Quand utiliser XDEBUG ?</h2><p>Parce qu’il ralentit considérablement l’application, XDEBUG ne doit pas être utilisé dans des environnements de production. En revanche son utilisation est conseillée en environnement de développement. Au delà du débuggage, XDEBUG peut aussi faire du profilage d’application (pour localiser les parties “gourmandes” de votre code), ou encore génerer la couverture de code de vos tests couplé à PHPUnit. Nous nous intéresserons dans cet article uniquement à la partie débuggage.</p>
 <h2 id="Installation-configuration-et-utilisation-basique-de-XDEBUG"><a href="#Installation-configuration-et-utilisation-basique-de-XDEBUG" class="headerlink" title="Installation, configuration et utilisation basique de XDEBUG"></a>Installation, configuration et utilisation basique de XDEBUG</h2><p>Pour installer XDEBUG depuis un serveur Debian, rien de très compliqué:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update &amp;&amp; sudo apt-get install php5-xdebug</span><br></pre></td></tr></table></figure></p>
 <h3 id="Communication-avec-le-serveur-ou-se-trouve-l’IDE"><a href="#Communication-avec-le-serveur-ou-se-trouve-l’IDE" class="headerlink" title="Communication avec le serveur ou se trouve l’IDE"></a>Communication avec le serveur ou se trouve l’IDE</h3><p>Si l’application que vous souhaitez débugger n’est pas sur la même machine que votre IDE (ou si votre application est dans une VM ce qui est le plus courant), vous allez devoir configurer le remote host de XDEBUG.</p>
@@ -150,7 +152,7 @@ ga('send', 'pageview');
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
 
-        <a data-url="http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/" data-id="cjgjtrjc0000213mke35zr54e" class="article-share-link">Partager</a>
+        <a data-url="http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/" data-id="cjgjunne8000601rv6yip258i" class="article-share-link">Partager</a>
         
           <a href="http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/#disqus_thread" class="article-comment-link">Commentaires</a>
         

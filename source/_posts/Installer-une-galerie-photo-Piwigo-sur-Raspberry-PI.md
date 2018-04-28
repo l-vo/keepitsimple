@@ -14,6 +14,7 @@ Je cherchais une galerie photo à mettre sur mon Raspberry Pi 3. J'avais précé
 - Support de certains formats vidéos
 
 Après quelques recherches, j'ai fini par tomber sur Piwigo (http://fr.piwigo.org/), une galerie open source avec un système de plugin permettant d'étendre les fonctionnalités de base à celles que je recherchais.
+<!-- more -->
 
 ## Installation
 J'ai installé OSMC (https://osmc.tv/) pour faire de mon Raspberry PI un lecteur multimedia. Cette distribution étant basée sur une Debian Stretch, je n'ai pas de mal à trouver dans les dépôts Debian ce dont j'ai besoin pour faire tourner Piwigo; à savoir:
