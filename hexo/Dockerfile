@@ -18,6 +18,8 @@ COPY _config.yml .
 
 # Personal banner
 COPY banner.jpg themes/paperbox/source/css/images/
+# Favicon
+COPY favicon.ico themes/paperbox/source/
 
 COPY theme/_config.yml themes/paperbox
 COPY theme/fr-FR.yml themes/paperbox/languages
