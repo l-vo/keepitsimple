@@ -18,6 +18,8 @@ COPY _config.yml .
 
 # Personal banner
 COPY banner.jpg themes/paperbox/source/css/images/
+# Favicon
+COPY favicon.ico themes/paperbox/source/
 
 COPY theme/_config.yml themes/paperbox
 COPY theme/fr-FR.yml themes/paperbox/languages
@@ -47,4 +49,4 @@ RUN echo "#local-search-input\n  width: 150px" >> themes/paperbox/source/css/sty
 
 EXPOSE 4000
 
-CMD ["hexo", "server"]
+CMD ["hexo", "server", "--draft"]
