@@ -35,6 +35,7 @@ targetedCustomers:
 ```
 
 Et tout d'un coup **TOUS** nos clients se sont mis à être elligibles pour l'action précédemment évoquée. Pas glop. Comment en est-on arrivé à ce résultat ?
+<!-- more -->
 
 ## Yaml et ses valeurs resérvées
 En Yaml, certaines valeurs sont automatiquement converties. La chaine de caractères "true" (peu importe la casse) devient le booléan true. De même pour la chaine "on". Et aussi pour la chaine "yes". Tiens ça se précise. Donc une fois parsé, notre Yaml devient:

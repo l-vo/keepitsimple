@@ -9,6 +9,7 @@ Intéressons nous au debugging d'applications. Tout développeur en fait continu
 echo $myVar; exit();
 ```
 Mais lorsque l'on a besoin de suivre l'execution dans une pile de plusieurs fonctions et à l'intérieur de chacune d'elle visualiser plusieurs variables pour connaitre le contexte, la méthode ci-dessus ne suffit plus. C'est là qu'intervient XDEBUG.
+<!-- more -->
 
 ## Quand utiliser XDEBUG ?
 Parce qu'il ralentit considérablement l'application, XDEBUG ne doit pas être utilisé dans des environnements de production. En revanche son utilisation est conseillée en environnement de développement. Au delà du débuggage, XDEBUG peut aussi faire du profilage d'application (pour localiser les parties "gourmandes" de votre code), ou encore génerer la couverture de code de vos tests couplé à PHPUnit. Nous nous intéresserons dans cet article uniquement à la partie débuggage.
