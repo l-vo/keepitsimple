@@ -47,4 +47,4 @@ RUN echo "#local-search-input\n  width: 150px" >> themes/paperbox/source/css/sty
 
 EXPOSE 4000
 
-CMD ["hexo", "server"]
+CMD ["hexo", "server", "--draft"]
