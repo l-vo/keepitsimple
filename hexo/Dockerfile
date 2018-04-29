@@ -18,10 +18,22 @@ COPY _config.yml .
 
 # Personal banner
 COPY banner.jpg themes/paperbox/source/css/images/
-# Favicon
-COPY favicon.ico themes/paperbox/source/
 
+# Favicon
+COPY favicon/android-chrome-192x192.png themes/paperbox/source/
+COPY favicon/android-chrome-512x512.png themes/paperbox/source/
+COPY favicon/apple-touch-icon.png themes/paperbox/source/
+COPY favicon/browserconfig.xml themes/paperbox/source/
+COPY favicon/favicon.ico themes/paperbox/source/
+COPY favicon/favicon-16x16.png themes/paperbox/source/
+COPY favicon/favicon-32x32.png themes/paperbox/source/
+COPY favicon/mstile-150x150.png themes/paperbox/source/
+COPY favicon/safari-pinned-tab.svg themes/paperbox/source/
+COPY favicon/site.webmanifest themes/paperbox/source/
+
+# Theme
 COPY theme/_config.yml themes/paperbox
+COPY theme/head.ejs themes/paperbox/layout/_partial
 COPY theme/fr-FR.yml themes/paperbox/languages
 
 # Remove animated cube
