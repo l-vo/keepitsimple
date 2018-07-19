@@ -43,7 +43,7 @@ RUN perl -i -pe 'BEGIN { undef $/; } s/<div id="contenedor">.*?<\/div>/<div id="
 RUN sed -i 's/<link href="\/\/fonts.useso.com\/css?family=Source+Code+Pro" rel="stylesheet" type="text\/css">//' themes/paperbox/layout/_partial/head.ejs
 
 # Change some css
-RUN sed -i 's/#header-title/#header-title\n  width: 200px/' themes/paperbox/source/css/_partial/header.styl
+RUN sed -i 's/#header-title/#header-title\n  width: 250px/' themes/paperbox/source/css/_partial/header.styl
 RUN sed -i 's/padding: 5px 10px/padding: inherit 10px/' themes/paperbox/source/css/_partial/header.styl
 RUN sed -i 's/bottom: 60px/bottom: 110px/' themes/paperbox/source/css/_partial/header.styl
 RUN sed -i 's/bottom: -50px/bottom: -15px/' themes/paperbox/source/css/_partial/header.styl
