@@ -439,7 +439,7 @@ body {
   cursor: pointer;
 }
 #header-title {
-  width: 250px;
+  width: 200px;
   position: relative;
   overflow: hidden;
   float: left;
@@ -449,7 +449,8 @@ body {
 @media screen and (max-width: 479px) {
   #header-title {
     position: absolute;
-    bottom: 110px;
+    bottom: 120px;
+    font-size: 0.9em;
   }
 }
 #blog-title {
@@ -672,6 +673,12 @@ body {
   -o-transition: none;
   -ms-transition: none;
   transition: none;
+}
+.nav-icon:first-child {
+  padding-left: 0;
+}
+.nav-icon:last-child {
+  padding-right: 0;
 }
 .article {
   margin: 50px 0;
