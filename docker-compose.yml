@@ -5,4 +5,4 @@ services:
     image: nginx
     restart: always
     volumes:
-      - ./public/:/usr/share/nginx/html/:cached
+      - ./generated/public/:/usr/share/nginx/html/:cached
