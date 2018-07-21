@@ -58,6 +58,7 @@ COPY theme/search.ejs /tmp/
 RUN cat /tmp/search.ejs >> themes/paperbox/layout/_partial/after-footer.ejs
 COPY theme/search.js themes/paperbox/source/js/
 RUN sed -i 's/<a class="main-nav-link st-search-show-outputs"><%= __(.search.) %><\/a>/<a class="main-nav-link" href="\/rechercher" id="search-link"><%= __("search") %><\/a>/' themes/paperbox/layout/_partial/header.ejs
+RUN sed -i 's/<a href="#search" class="mobile-nav-link st-search-show-outputs">Search<\/a>/<a href="\/rechercher" class="mobile-nav-link st-search-show-outputs">Search<\/a>/' themes/paperbox/layout/_partial/mobile-nav.ejs
 RUN echo "#local-search-input\n  width: 150px" >> themes/paperbox/source/css/style.styl
 
 EXPOSE 4000
