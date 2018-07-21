@@ -47,7 +47,7 @@ RUN sed -i 's/#header-title/#header-title\n  width: 200px/' themes/paperbox/sour
 RUN sed -i 's/padding: 5px 10px/padding: inherit 10px/' themes/paperbox/source/css/_partial/header.styl
 RUN sed -i 's/bottom: 60px/bottom: 120px\n    font-size: 0.9em/' themes/paperbox/source/css/_partial/header.styl
 RUN sed -i 's/bottom: -50px/bottom: -15px/' themes/paperbox/source/css/_partial/header.styl
-RUN echo  '.nav-icon\n  &:first-child\n    padding-left: 0\n  &:last-child\n    padding-right: 0' >> themes/paperbox/source/css/_partial/header.styl
+RUN echo  '@media mq-mobile\n  .nav-icon\n    &:first-child\n      padding-left: 0\n    &:last-child\n      padding-right: 0' >> themes/paperbox/source/css/_partial/header.styl
 
 # Use specific layout for pages
 COPY theme/page.ejs themes/paperbox/layout/_partial
