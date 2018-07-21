@@ -674,11 +674,13 @@ body {
   -ms-transition: none;
   transition: none;
 }
-.nav-icon:first-child {
-  padding-left: 0;
-}
-.nav-icon:last-child {
-  padding-right: 0;
+@media screen and (max-width: 479px) {
+  .nav-icon:first-child {
+    padding-left: 0;
+  }
+  .nav-icon:last-child {
+    padding-right: 0;
+  }
 }
 .article {
   margin: 50px 0;
