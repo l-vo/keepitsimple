@@ -5,9 +5,10 @@ RUN hexo init blog
 
 WORKDIR blog
 
-RUN git clone https://github.com/sun11/hexo-theme-paperbox.git themes/paperbox
 # Checkout a known version of the theme for right css replacements
-RUN cd themes/paperbox && git checkout 821e8c8b63c4cc26a9f1b1add24d711923f2d60f
+RUN git clone https://github.com/sun11/hexo-theme-paperbox.git themes/paperbox \
+&& cd themes/paperbox \
+&& git checkout 9c02944ac18d22640b5fc1dfee8fccb6a49786c1
 
 RUN npm install
 RUN npm install hexo-generator-feed --save
@@ -58,6 +59,7 @@ COPY theme/search.ejs /tmp/
 RUN cat /tmp/search.ejs >> themes/paperbox/layout/_partial/after-footer.ejs
 COPY theme/search.js themes/paperbox/source/js/
 RUN sed -i 's/<a class="main-nav-link st-search-show-outputs"><%= __(.search.) %><\/a>/<a class="main-nav-link" href="\/rechercher" id="search-link"><%= __("search") %><\/a>/' themes/paperbox/layout/_partial/header.ejs
+RUN sed -i 's/<a href="#search" class="mobile-nav-link st-search-show-outputs"><%= __(.search.) %><\/a>/<a href="\/rechercher" class="mobile-nav-link st-search-show-outputs"><%= __("search") %><\/a>/' themes/paperbox/layout/_partial/mobile-nav.ejs
 RUN echo "#local-search-input\n  width: 150px" >> themes/paperbox/source/css/style.styl
 
 EXPOSE 4000
