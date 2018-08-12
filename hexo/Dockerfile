@@ -65,6 +65,13 @@ RUN echo "#local-search-input\n  width: 150px" >> themes/paperbox/source/css/sty
 # Fix sublanguages in hexo (see https://github.com/hexojs/hexo-util/pull/37)
 RUN sed -i "s/require('highlight.js\/lib\/highlight')/require('highlight.js')/" node_modules/hexo-util/lib/highlight.js
 
+# Fix problem on some sublanguages (i.e. Docker)
+COPY tryhighlight_patched.js /
+RUN if [$(grep tryHighlightPatched node_modules/hexo-util/lib/highlight.js) = ""];\
+ then cat /tryhighlight_patched.js >>  node_modules/hexo-util/lib/highlight.js;\
+ sed -i 's/return tryHighlight(/return tryHighlightPatched(/' node_modules/hexo-util/lib/highlight.js;\
+ fi;
+
 EXPOSE 4000
 
 CMD ["hexo", "server", "--draft"]
