@@ -62,6 +62,9 @@ RUN sed -i 's/<a class="main-nav-link st-search-show-outputs"><%= __(.search.) %
 RUN sed -i 's/<a href="#search" class="mobile-nav-link st-search-show-outputs"><%= __(.search.) %><\/a>/<a href="\/rechercher" class="mobile-nav-link st-search-show-outputs"><%= __("search") %><\/a>/' themes/paperbox/layout/_partial/mobile-nav.ejs
 RUN echo "#local-search-input\n  width: 150px" >> themes/paperbox/source/css/style.styl
 
+# Fix sublanguages in hexo (see https://github.com/hexojs/hexo-util/pull/37)
+RUN sed -i "s/require('highlight.js\/lib\/highlight')/require('highlight.js')/" node_modules/hexo-util/lib/highlight.js
+
 EXPOSE 4000
 
 CMD ["hexo", "server", "--draft"]
