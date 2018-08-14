@@ -8,15 +8,7 @@
 
     <url>
         <loc>http://keepitsimple.l-vo.fr/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/</loc>
-        <lastmod>2018-08-12T07:14:24.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://keepitsimple.l-vo.fr/2018/03/18/yaml-in_array/</loc>
-        <lastmod>2018-04-28T20:55:55.000Z</lastmod>
+        <lastmod>2018-08-14T12:01:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,6 +16,14 @@
 
     <url>
         <loc>http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/</loc>
+        <lastmod>2018-04-28T20:55:55.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://keepitsimple.l-vo.fr/2018/03/18/yaml-in_array/</loc>
         <lastmod>2018-04-28T20:55:55.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

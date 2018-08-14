@@ -148,7 +148,7 @@ ga('send', 'pageview');
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$client = <span class="keyword">new</span> \GuzzleHttp\Client();</span><br><span class="line">$cookieJar = GuzzleHttp\Cookie\CookieJar::fromArray([</span><br><span class="line">  <span class="string">'XDEBUG_SESSION'</span> =&gt; <span class="string">'ma-valeur-quelconque'</span></span><br><span class="line">], <span class="string">'monapi.com'</span>);</span><br><span class="line">$res = $client-&gt;request(<span class="string">'GET'</span>, <span class="string">'http://monapi.com/maressource.php'</span>, $cookieJar);</span><br></pre></td></tr></table></figure>
 <h4 id="API-SOAP"><a href="#API-SOAP" class="headerlink" title="API SOAP"></a>API SOAP</h4><p>Si vous utilisez un outil comme SoapUI, il faut ajouter le paramètre <code>XDEBUG_SESSION_START</code> à l’url de votre fichier wsdl.</p>
 <p>Si l’appel à votre API est effectuée au milieu du code de votre application, même fonctionnement que pour une API REST, on ajoute le cookie <code>XDEBUG_SESSION</code> dans le code:</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$client = <span class="keyword">new</span> \SoapClient(<span class="string">'http://www.monapi.com);</span><br><span class="line"></span><span class="string">$client-&gt;__setCookie('</span>XDEBUG_SESSION<span class="string">', '</span>ma-valeur-quelconque<span class="string">');</span><br><span class="line"></span><span class="string">$client-&gt;mamethode($monparam);</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$client = <span class="keyword">new</span> \SoapClient(<span class="string">'http://www.monapi.com);</span></span><br><span class="line"><span class="string">$client-&gt;__setCookie('</span>XDEBUG_SESSION<span class="string">', '</span>ma-valeur-quelconque<span class="string">');</span></span><br><span class="line"><span class="string">$client-&gt;mamethode($monparam);</span></span><br></pre></td></tr></table></figure>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Voilà ! j’espère que ce petit tour d’horizon vous aura permis de mieux appréhender le fonctionnement de XDEBUG :)</p>
 
       
@@ -158,7 +158,7 @@ ga('send', 'pageview');
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
 
-        <a data-url="http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/" data-id="cjkqiu997000814lgglsoszel" class="article-share-link">Partager</a>
+        <a data-url="http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/" data-id="cjktm2llf000501qyospaalub" class="article-share-link">Partager</a>
         
           <a href="http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/#disqus_thread" class="article-comment-link">Commentaires</a>
         
