@@ -131,6 +131,9 @@ services:
   afp:
     build: netatalk
     ports:
+      # Le port 548 du conteneur n'est pas mappé au port 548 de la machine hôte.
+      # Cela ne fonctionne plus depuis OS X Sierra.
+      # veuillez donc choisir un autre port; 1548 par example.
       - 1548:548
     volumes:
       - myproject_files:/media/share/myproject
