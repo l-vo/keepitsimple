@@ -182,3 +182,8 @@ volumes:
 
 ## Conclusion
 Cette solution n'a pas pour prétention ni d'être meilleure que les autres, ni de résoudre tous les problèmes (d'ailleurs elle ne le fait pas !). Elle peut cependant être intéressante pour les personnes qui ne seraient pas tout à fait satisfaites des volumes partagés de façon traditionnelle entre machine hôte et conteneur et qui sont prêtes à faire d'autres compromis.
+
+## Edit 04/11/2018
+J'ai depuis testé [docker-sync](http://docker-sync.io/). Le principe reste le même, les fichiers demeurent sur un volume externe et un autre conteneur se charge de les "servir". Là où via AFP, le volume était accessible via un partage réseau, docker-sync crée un conteneur qui se charge de surveiller et de garder synchronisés un dossier local et le volume externe utilisé par l'application.
+
+J'ai d'abord utilisé la paramétrage `host_disk_mount_mode` par defaut (`cached`) puis j'ai utilisé la valeur `delegated` qui apporte une synchronisation de ma machine hôte vers mon conteneur plus rapide. Malgré ça ce n'est aujourd'hui pas tout à fait parfait, j'ai encore quelques cas ou les modifs que je fais depuis mon IDE ne sont pas repercutés dans mon conteneur (la plupart du temps lors d'un changement de branche). Le seul workaround que j'ai trouvé jusqu'à présent est de redémarrer docker-sync puis le conteneur de mon application. ça reste malgré tout la solution que je privilégie et conseille aujourd'hui.
