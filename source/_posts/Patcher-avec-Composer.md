@@ -1,5 +1,5 @@
 ---
-title: Patcher avec composer
+title: Patcher avec Composer
 tags:
   - PHP
   - Composer
