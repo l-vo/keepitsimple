@@ -6,7 +6,7 @@ tags:
 date: 2018-11-24 09:46:18
 ---
 
-Récemment, sans rien que nous ayons modifié de particulier, `simple-phpunit` ()qui lance nos tests Symfony) ne fonctionnait plus. Plus embêtant encore, ce problème faisait échouer nos CI. Après une courte investiguation, il s'est avéré que `simple-phpunit` (maintenu par Symfony) reposait sur des branches de PHPUNIT. Certaines anciennes branches ayant été supprimés du repository (probablement car elles vont cesser d'être maintenues), `simple-phpunit` ne pouvait plus fonctionner.
+Récemment, sans rien que nous ayons modifié de particulier, `simple-phpunit` (qui lance nos tests Symfony) ne fonctionnait plus. Plus embêtant encore, ce problème faisait échouer nos CI. Après une courte investiguation, il s'est avéré que `simple-phpunit` (maintenu par Symfony) reposait sur des branches de PHPUNIT. Certaines anciennes branches ayant été supprimés du repository (probablement car elles vont cesser d'être maintenues), `simple-phpunit` ne pouvait plus fonctionner.
 
 # Quelle solution ?
 <!-- more -->
