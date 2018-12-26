@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Keep it simple. Stupid.">
 <meta property="og:description" content="Récemment, sans rien que nous ayons modifié de particulier, simple-phpunit (qui lance nos tests Symfony) ne fonctionnait plus. Plus embêtant encore, ce problème faisait échouer nos CI. Après une court">
 <meta property="og:locale" content="fr-FR">
-<meta property="og:updated_time" content="2018-12-03T12:26:07.000Z">
+<meta property="og:updated_time" content="2018-12-26T12:13:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Patcher avec Composer">
 <meta name="twitter:description" content="Récemment, sans rien que nous ayons modifié de particulier, simple-phpunit (qui lance nos tests Symfony) ne fonctionnait plus. Plus embêtant encore, ce problème faisait échouer nos CI. Après une court">
@@ -118,7 +118,7 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         
-        <p>Récemment, sans rien que nous ayons modifié de particulier, <code>simple-phpunit</code> (qui lance nos tests Symfony) ne fonctionnait plus. Plus embêtant encore, ce problème faisait échouer nos CI. Après une courte investiguation, il s’est avéré que <code>simple-phpunit</code> (maintenu par Symfony) reposait sur des branches de PHPUNIT. Certaines anciennes branches ayant été supprimés du repository (probablement car elles vont cesser d’être maintenues), <code>simple-phpunit</code> ne pouvait plus fonctionner.</p>
+        <p>Récemment, sans rien que nous ayons modifié de particulier, <code>simple-phpunit</code> (qui lance nos tests Symfony) ne fonctionnait plus. Plus embêtant encore, ce problème faisait échouer nos CI. Après une courte investigation, il s’est avéré que <code>simple-phpunit</code> (maintenu par Symfony) reposait sur des branches de PHPUNIT. Certaines anciennes branches ayant été supprimés du repository (probablement car elles vont cesser d’être maintenues), <code>simple-phpunit</code> ne pouvait plus fonctionner.</p>
 <h1 id="Quelle-solution"><a href="#Quelle-solution" class="headerlink" title="Quelle solution ?"></a>Quelle solution ?</h1><a id="more"></a>
 <p>Le problème a rapidemment été corrigé du côté de Symfony (<a href="https://github.com/symfony/symfony/pull/29265)" target="_blank" rel="noopener">https://github.com/symfony/symfony/pull/29265)</a>. Sur notre projet nous sommes sur la version <code>3.4.17</code> de <code>symfony/phpunit-bridge</code>. Le fix a été mergé sur la branche <code>3.4</code>, mais nous ne pouvons pas en bénéficier via Composer tant qu’un nouveau tag n’est pas créé et poussé sur Packagist.<br>La solution la plus simple est de passer sur la branche <code>3.4</code>:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// composer.json</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="string">"require-dev"</span>: &#123;</span><br><span class="line">      <span class="string">"symfony/phpunit-bridge"</span>: <span class="string">"dev-3.4"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ composer update symfony/phpunit-bridge</span><br></pre></td></tr></table></figure>
@@ -142,7 +142,7 @@ ga('send', 'pageview');
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Composer/">Composer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
 
-        <a data-url="http://keepitsimple.l-vo.fr/2018/11/24/Patcher-avec-Composer/" data-id="cjowv9f72000901qsfm46e0nn" class="article-share-link">Partager</a>
+        <a data-url="http://keepitsimple.l-vo.fr/2018/11/24/Patcher-avec-Composer/" data-id="cjq555xsy000301o3fosdca16" class="article-share-link">Partager</a>
         
           <a href="http://keepitsimple.l-vo.fr/2018/11/24/Patcher-avec-Composer/#disqus_thread" class="article-comment-link">Commentaires</a>
         
