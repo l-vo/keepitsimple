@@ -1,12 +1,11 @@
 ---
-title: Partager des volumes Docker via AFP sur OS X
+title: Partager des volumes Docker via AFP sur Mac
 tags:
   - Docker
 date: 2018-08-16 19:38:08
 ---
 
-Suite à la lecture de [cet article](https://jolicode.com/blog/ma-stack-de-developpement-avec-docker-sous-macos-x), je voudrais faire un court retour d'expérience sur une solution alternative
- que je privilégie depuis un certain temps. 
+Suite à la lecture de [cet article](https://jolicode.com/blog/ma-stack-de-developpement-avec-docker-sous-macos-x), je voudrais faire un court retour d'expérience sur une solution alternative de partage de volumes sous macOS (anciennement OS X) que je privilégie depuis un certain temps. 
  
 ## La problématique
 Si depuis que j'ai goûté à Docker, je ne peux m'en passer pour mes conteneurs de développement, j'ai vite été confronté à des limitations sur OS X:
