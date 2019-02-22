@@ -32,14 +32,21 @@
 
     <url>
         <loc>http://keepitsimple.l-vo.fr/tags/Raspberry-Pi/</loc>
-        <lastmod>2019-02-20T14:53:31.000Z</lastmod>
+        <lastmod>2019-02-22T08:53:27.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://keepitsimple.l-vo.fr/tags/Python/</loc>
-        <lastmod>2019-02-20T14:53:31.000Z</lastmod>
+        <lastmod>2019-02-22T08:53:27.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://keepitsimple.l-vo.fr/tags/Linux/</loc>
+        <lastmod>2019-03-08T11:34:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
