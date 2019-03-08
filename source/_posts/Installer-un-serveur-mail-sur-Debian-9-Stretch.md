@@ -290,7 +290,7 @@ Si tout est ok il faut pour des raisons de sécurité supprimer le répertoire d
 ```bash
 $ rm -rf installer
 ```
-L'installation que nous avons faite ici est vraiment basique, il peut y avoir des ajustements notamment sur la configuration PHP à faire. Je vous encourage par rapport à cela à lire les [recommandations d'installation Roundcube](https://github.com/roundcube/roundcubemail/wiki/Installation).
+L'installation que nous avons faite ici est vraiment basique, il peut y avoir des ajustements notamment sur la configuration PHP à faire. Je vous encourage par rapport à cela à lire les [recommandations d'installation Roundcube](https://github.com/roundcube/roundcubemail/wiki/Installation). De plus, afin d'éviter que les mots de passe de votre système ne transitent en clair sur le réseau, il vous appartient de [sécuriser votre webmail via https](https://www.memoinfo.fr/tutoriels-linux/configurer-lets-encrypt-apache/).
 
 ## Comptes mails virtuels
 Là ça va devenir un peu plus intéressant. Parce que même si l'on a pas à gérer plusieurs dizaines d'adresses mail, on ne souhaite pas avoir a créer pour chaque compte mail un compte utilisateur sur le système. De plus, avec le système actuel, comment gérer des adresses d'un autre domaine ? On peut créer un autre domaine qui pointe vers la même machine, mais si on a `moi @ mondomaine1.com` et `moi @ mondomaine2.com` qui appartiennent à deux personnes différentes, les deux adresses arriveront au compte système *moi*. Et lorsque l'on enverra vers l'extérieur, un seul des deux domaines pourra être configuré, si c'est *mondomaine1.com* on ne pourra jamais envoyer des mails à partir de l'adresse `moi @ mondomaine2.com`. La solution à ces problèmes sont les comptes mails virtuels.
@@ -370,7 +370,7 @@ Paramétrons ensuite le fichier `/etc/dovecot/conf.d/auth-passwdfile.conf.ext`, 
 auth_mechanisms = plain cram-md5
 passdb {
   driver = passwd-file
-  args = scheme=cram-md5 /etc/cram-md5.pwd
+  args = scheme=sha512-crypt /etc/sha512-crypt.pwd
 }
 
 userdb {
@@ -378,13 +378,22 @@ userdb {
   args = uid=vmail gid=vmail home=/var/vmail/%d/%n
 }
 ```
-Pour résumer cette configuration, on va mettre les mots de passes cryptés au format MD5 dans un fichier /etc/cram-md5.pwd. A noter que là aussi on doit passer le chemin du stockage des mails virtuels. Le fichier `/etc/cram-md5.pwd` doit être au format user:mot_de_passe_crypte_md5 (les crypteurs MD5 en ligne ne manquent pas si vous ne savez pas le faire avec openssl). ça nous donnera par exemple:
+Pour résumer cette configuration, on va mettre les mots de passes cryptés au format sha512 dans un fichier /etc/sha512-crypt.pwd. Le méchanisme d'authentification est dit "plain-text", ce qui signifie que les mots de passe transitent en clair sur le réseau. Pour palier à ce problème, les connexions doivent être cryptées, c'est pour cela que le webmail précédemment mis en place doit être protégé par une connexion sécurisée. Je ne m'attarderais pas plus sur cette partie qui sort un peu du cadre de cette article, même si l'on reparlera brièvement de connexion sécurisée et de *Let's Encrypt un peu plus loin*.
+
+A noter que là aussi on doit passer le chemin du stockage des mails virtuels.
+
+Pour générer un mot de passe au format sha512, vous pouvez utiliser la commande fournie par Dovecot:
+```bash
+$ doveadm pw -s sha512-crypt
 ```
-me@l-vo.fr:179ad45c6ce2cb97cf1029e212046e81
-monmail1@mondomaine2.fr:ce620121b544faaef09e7f0b6dbd61ab
-monmail2@mondomaine2.fr:5a349c44e203333f3fdcdbc45f3de268
-monmail1@mondomaine3.com:12eccbdd9b32918131341f38907cbbb5
-monmail3@mondomaine3.com:07933b506472ea9e2d8d70b4056bc7fd
+
+Le fichier `/etc/sha512-crypt.pwd` doit être au format user:mot_de_passe_crypte, ainsi votre fichier devrait ressembler plus ou moins à ça:
+```
+me@l-vo.fr:{SHA512-CRYPT}$6$IIqxym0pZk32SFlQ$sC04yUm9EX5xvTYWxqKGk5T94ehqbnQgkJZSrOXRBk/1PF/2/kIMvHOZMCEHSp43nG9VZ6p06SCbPTOPWns020
+monmail1@mondomaine2.fr:{SHA512-CRYPT}$6$b5syhg6XjqU9ppTQ$lKRxY5VlfMldDghGl1RdCnyhPDVDyrL/tRy6z2wYMFdWO6ZMLhJdseindT6MCySkjjdYvzVbYpA4sNk2qnC3X1
+monmail2@mondomaine2.fr:{SHA512-CRYPT}$6$n94IadnRSXEJ.yio$kohBaVSbtJwieU2PIbxVCuP0vpxGSed8Qz3rA8252AQ5Kai4MnPCr4mVc8SLXHdj7J8zowz181pLEDwZdBny60
+monmail1@mondomaine3.com:{SHA512-CRYPT}$6$7zYKwZRZ3Yeu6k/L$qDU3FpO2yTsMISP/8z8Pza1WL5SzKu.votfyhY8jVvT7f5/8H4AifgluJB.HGaNCQB5qzctKLIrQ2.rAMbZl1.
+monmail3@mondomaine3.com:{SHA512-CRYPT}$6$m5LIbqaGfkSVh8xb$rXUtjG2eeRJu/CA6HMMGQ6jB8fVxgXhl/QXW4MoKA4zaZ7jB1gt/VpwEtPNc5pQZKi0wvX0wttmVm6v2BXyd2.
 ```
 On reload Dovecot:
 ```bash
