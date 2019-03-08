@@ -1,8 +1,18 @@
 version: "3"
 
 services:
+
   nginx:
     image: nginx
-    restart: always
     volumes:
       - ./generated/public/:/usr/share/nginx/html/:cached
+    ports:
+      - 80:80
+
+  hexo:
+    build: hexo
+    volumes:
+      - ./generated/:/blog/generated/:cached
+      - ./source/:/blog/source/:cached
+    ports:
+      - "4000:4000"
