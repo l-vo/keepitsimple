@@ -92,7 +92,7 @@ $ mv /etc/opendkim.conf /etc/opendkim/
 $ ln -s /etc/opendkim/opendkim.conf /etc/opendkim.conf
 $ mkdir /etc/opendkim/keys
 # Pour chaque domaine que vous voudrez gérer, il faut créer un répertoire:
-$ mkdir /etc/opendkim/keys/l-vo.fr 
+$ mkdir /etc/opendkim/keys/mondomaine.tld
 ```
 Configurons opendkim pour utiliser le port 12301 en ajoutant les lignes suivantes à la fin du fichier `/etc/default/opendkim`
 ```
@@ -138,9 +138,9 @@ encoreunautredomaine.org
 ```
 On continue dans la configuration avec le fichier `/etc/opendkim/KeyTable` (comme précédemment vous devez avoir une ligne par domaine):
 ```
-mail._domainkey.mondomaine.tld l-vo.fr:mail:/etc/opendkim/keys/mondomaine.tld/mail.private
+mail._domainkey.mondomaine.tld mondomaine.tld:mail:/etc/opendkim/keys/mondomaine.tld/mail.private
 ```
-Puis `/etc/opendkim/KeyTable` (toujours une ligne par domaine):
+Puis `/etc/opendkim/SigningTable` (toujours une ligne par domaine):
 ```
 *@mondomaine.tld mail._domainkey.mondomaine.tld
 ```
@@ -307,7 +307,7 @@ mondomaine.tld
 monautredomaine.net
 encoreunautredomaine.org
 ```
-Ensuite créons un fichier `valiases`, vous n'aurez probablement pas besoin de le remplir, il permet de créer des alias de comptes de messagerie, par exemple si je veux masquer l'adresse perso de quelqu'un, je pourrais afficher sur mon site `quisuisje@l-vo.fr`, et dans mon fichier *vialiases*:
+Ensuite créons un fichier `valiases`, vous n'aurez probablement pas besoin de le remplir, il permet de créer des alias de comptes de messagerie, par exemple si je veux masquer l'adresse perso de quelqu'un, je pourrais afficher sur mon site `quisuisje@mondomaine.tld`, et dans mon fichier *vialiases*:
 ```
 quisuisje@mondomaine.tld  unemailperso@gmail.com
 ```
@@ -389,7 +389,7 @@ $ doveadm pw -s sha512-crypt
 
 Le fichier `/etc/sha512-crypt.pwd` doit être au format user:mot_de_passe_crypte, ainsi votre fichier devrait ressembler plus ou moins à ça:
 ```
-me@l-vo.fr:{SHA512-CRYPT}$6$IIqxym0pZk32SFlQ$sC04yUm9EX5xvTYWxqKGk5T94ehqbnQgkJZSrOXRBk/1PF/2/kIMvHOZMCEHSp43nG9VZ6p06SCbPTOPWns020
+moi@mondomaine.tld:{SHA512-CRYPT}$6$IIqxym0pZk32SFlQ$sC04yUm9EX5xvTYWxqKGk5T94ehqbnQgkJZSrOXRBk/1PF/2/kIMvHOZMCEHSp43nG9VZ6p06SCbPTOPWns020
 monmail1@mondomaine2.fr:{SHA512-CRYPT}$6$b5syhg6XjqU9ppTQ$lKRxY5VlfMldDghGl1RdCnyhPDVDyrL/tRy6z2wYMFdWO6ZMLhJdseindT6MCySkjjdYvzVbYpA4sNk2qnC3X1
 monmail2@mondomaine2.fr:{SHA512-CRYPT}$6$n94IadnRSXEJ.yio$kohBaVSbtJwieU2PIbxVCuP0vpxGSed8Qz3rA8252AQ5Kai4MnPCr4mVc8SLXHdj7J8zowz181pLEDwZdBny60
 monmail1@mondomaine3.com:{SHA512-CRYPT}$6$7zYKwZRZ3Yeu6k/L$qDU3FpO2yTsMISP/8z8Pza1WL5SzKu.votfyhY8jVvT7f5/8H4AifgluJB.HGaNCQB5qzctKLIrQ2.rAMbZl1.
