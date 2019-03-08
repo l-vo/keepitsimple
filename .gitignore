@@ -1,5 +1,2 @@
 # IDE files
 .idea/
-
-# Docker files
-docker-compose.override.yml
