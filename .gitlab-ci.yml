@@ -8,5 +8,4 @@ build-docker-image:
 
 deploy-docker-image:
   stage: deploy
-  script:
-    - docker run -d --name keepitsimple --restart always lvo.dev/keepitsimple
+  script: python prod/deploy.py
