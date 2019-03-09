@@ -1,0 +1,18 @@
+stages:
+  - build
+  - deploy
+
+build-docker-image:
+  stage: build
+  script: make build
+  after_script:
+    - "mkdir ~/keepitsimple 2>/dev/null || :"
+    - cp prod/deploy.py ~/keepitsimple/
+  only:
+    - master
+
+deploy-docker-image:
+  stage: deploy
+  script: make start
+  only:
+    - master
