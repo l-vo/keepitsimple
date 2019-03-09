@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 
-.PHONY: build clean start status stop
+.PHONY: build clean exec start status stop
 
 ## ------
 
@@ -20,6 +20,13 @@ clean:
     	else\
     		docker rm -vf keepitsimple;\
     	fi
+
+## Exec a shell into hexo container
+exec:
+	@if [ -z ${ENV_PROD} ];\
+	then\
+		docker-compose exec hexo bash;\
+	fi
 
 ## Start containers
 start:
