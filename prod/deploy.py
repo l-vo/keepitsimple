@@ -4,7 +4,7 @@ import os
 import subprocess
 
 project_name = 'keepitsimple'
-image_name = 'lvo.dev/' + project_name
+image_name = os.environ['DOCKER_NAMESPACE'] + '/' + project_name
 network_name = project_name
 
 client = docker.from_env()
