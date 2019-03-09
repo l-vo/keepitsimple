@@ -4,8 +4,8 @@ stages:
 
 build-docker-image:
   stage: build
-  script: docker build --no-cache -t lvo.dev/keepitsimple prod
+  script: make build
 
 deploy-docker-image:
   stage: deploy
-  script: python prod/deploy.py
+  script: make start

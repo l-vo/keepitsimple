@@ -7,53 +7,37 @@ SHELL := /bin/bash
 
 ## Build Dockerfiles
 build:
-	@if [ -z ${ENV_PROD} ];\
+	@if [ -z ${GITLAB_CI} ];\
 	then\
 		docker-compose build;\
+	else\
+		docker build --no-cache -t lvo.dev/keepitsimple prod;\
 	fi
 
 ## Remove containers
 clean:
-	@if [ -z ${ENV_PROD} ];\
-    	then\
-    		docker-compose rm -vf;\
-    	else\
-    		docker rm -vf keepitsimple;\
-    	fi
+	docker-compose rm -vf;\
 
 ## Exec a shell into hexo container
 exec:
-	@if [ -z ${ENV_PROD} ];\
-	then\
-		docker-compose exec hexo bash;\
-	fi
+	docker-compose exec hexo bash
 
 ## Start containers
 start:
-	@if [ -z ${ENV_PROD} ];\
+	@if [ -z ${GITLAB_CI} ];\
 	then\
 		docker-compose up -d;\
 	else\
-		docker run -d --name keepitsimple -v `pwd`/generated/public/:/usr/share/nginx/html/ --restart always nginx;\
+		python prod/deploy.py;\
 	fi
 
 ## View containers states
 status:
-	@if [ -z ${ENV_PROD} ];\
-	then\
-		docker-compose ps;\
-	else\
-		docker ps --filter name=^keepitsimple$$;\
-	fi
+	docker-compose ps
 
 ## Stop containers
 stop:
-	@if [ -z ${ENV_PROD} ];\
-	then\
-		docker-compose stop;\
-	else\
-		docker stop keepitsimple;\
-	fi
+	docker-compose stop
 
 ## ------
 
