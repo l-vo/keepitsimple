@@ -1,6 +1,12 @@
 stages:
   - build
+  - deploy
 
 build-docker-image:
   stage: build
-  script: echo "hello world"
+  script: docker build --no-cache -t lvo.dev/keepitsimple prod
+
+deploy-docker-image:
+  stage: deploy
+  script:
+    - docker run -d --name keepitsimple --restart always lvo.dev/keepitsimple
