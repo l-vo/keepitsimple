@@ -27,7 +27,7 @@ start:
 	then\
 		docker-compose up -d;\
 	else\
-		docker run -d --name keepitsimple -v `pwd`/generated/public/:/usr/share/nginx/html/ nginx;\
+		docker run -d --name keepitsimple -v `pwd`/generated/public/:/usr/share/nginx/html/ --restart always nginx;\
 	fi
 
 ## View containers states
