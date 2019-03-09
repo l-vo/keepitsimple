@@ -1,0 +1,4 @@
+FROM nginx
+
+RUN rm -rf /usr/share/nginx/html
+COPY generated/public /usr/share/nginx/html

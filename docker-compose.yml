@@ -5,14 +5,14 @@ services:
   nginx:
     image: nginx
     volumes:
-      - ./generated/public/:/usr/share/nginx/html/:cached
+      - ./prod/generated/public/:/usr/share/nginx/html/:cached
     ports:
       - 80:80
 
   hexo:
     build: hexo
     volumes:
-      - ./generated/:/blog/generated/:cached
+      - ./prod/generated/:/blog/generated/:cached
       - ./source/:/blog/source/:cached
     ports:
       - "4000:4000"
