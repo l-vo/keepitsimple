@@ -157,7 +157,7 @@ mail._domainkey	IN	TXT	( "v=DKIM1; h=sha256; k=rsa; "
 ```
 Le fichier `mail.private` doit être accessible par opendkim, il faut donc en changer les droits:
 ```bash
-$ chown opendkim:opendkim mail.private
+$ chown opendkim: mail.private
 ```
 Il n'y a plus qu'a copier coller ces données dans vos enregistrements DNS. Au final, entre MX, SPF et DKIM, vos DNS devraient avoir cette allure:
 ```
@@ -528,7 +528,14 @@ $ systemctl start spamassassin
 $ systemctl restart postfix
 ```
 
-Si vous envoyez un mail avec comme corps `XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X`, cela devrait générer un faux positif et vous devriez voir ajouter `*****SPAM*****` à l'objet de votre message. Voyons maintenant comment les classer dans un dossier "Spam".
+Si vous envoyez un mail avec comme corps `XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X`, cela devrait générer un faux positif et vous devriez voir ajouter `*****SPAM*****` à l'objet de votre message.
+
+Les bases de données de spam sont continuellement mises à jour. Pour cette raison vous devez mettre à jour régulièrement votre base locale d'information via la commande `/usr/bin/sa-update`. Par exemple voilà une ligne à mettre dans mon crontab root qui me permet de mettre à jour mes données tous les lundi à 16h:
+```
+0 16 * * 1 /usr/bin/sa-update
+```
+
+Maintenant que nous avons un système efficace pour flagger les spams, voyons comment les classer dans un dossier adéquat ("Spam" par exemple).
 
 ### Installation et configuration de Procmail
 Installons le logiciel:
