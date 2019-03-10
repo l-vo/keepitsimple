@@ -9,7 +9,7 @@ network_name = project_name
 
 client = docker.from_env()
 
-name = 'keepitsimple_' + str(time.time())
+name = project_name + '_' + str(time.time())
 
 print "Running new container"
 new_container = client.containers.run(
@@ -39,7 +39,8 @@ print "Wainting"
 time.sleep(20)
 
 print "Removing old containers"
-filters = {'name': '^keepitsimple_[0-9.]+$'}
+regex = '^{project_name}_[0-9.]+$';
+filters = {'name': regex.format(project_name=project_name)}
 for container in client.containers.list(all=True, filters=filters):
     if container.name == name:  # Don't remove just created container !
         continue
