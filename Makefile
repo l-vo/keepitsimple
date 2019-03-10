@@ -16,11 +16,11 @@ build:
 
 ## Remove containers
 clean:
-	docker-compose rm -vf;\
+	@docker-compose rm -vf;\
 
 ## Exec a shell into hexo container
 exec:
-	docker-compose exec hexo bash
+	@docker-compose exec hexo bash
 
 ## Start containers
 start:
@@ -33,11 +33,11 @@ start:
 
 ## View containers states
 status:
-	docker-compose ps
+	@docker-compose ps
 
 ## Stop containers
 stop:
-	docker-compose stop
+	@docker-compose stop
 
 ## ------
 
