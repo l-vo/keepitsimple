@@ -157,7 +157,7 @@ mail._domainkey	IN	TXT	( "v=DKIM1; h=sha256; k=rsa; "
 ```
 Le fichier `mail.private` doit être accessible par opendkim, il faut donc en changer les droits:
 ```bash
-$ chown opendkim:opendkim mail.private
+$ chown opendkim: mail.private
 ```
 Il n'y a plus qu'a copier coller ces données dans vos enregistrements DNS. Au final, entre MX, SPF et DKIM, vos DNS devraient avoir cette allure:
 ```
