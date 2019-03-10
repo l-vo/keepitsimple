@@ -9,6 +9,7 @@ In production, this project requires:
 - Python 2.7
 - the docker Python sdk (`pip install docker`)
 - an environment variable `UPSTREAMS_LOCATION` with the file where the Nginx upstream will be written. `{project}` placeholder can be user and will be replaced by *keepitsimple*.
+- the file designed by the previous environment variable owned by the user `gitlab-runner`
 - an environment variable `DOCKER_NAMESPACE` with the namespace used for created production docker image 
 
 ## Development usage
