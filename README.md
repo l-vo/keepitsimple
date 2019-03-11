@@ -11,6 +11,7 @@ In production, this project requires:
 - an environment variable `UPSTREAMS_LOCATION` with the file where the Nginx upstream will be written. `{project}` placeholder can be user and will be replaced by *keepitsimple*.
 - the file designed by the previous environment variable owned by the user `gitlab-runner`
 - an environment variable `DOCKER_NAMESPACE` with the namespace used for created production docker image 
+- an environment variable `DEPLOY_SCRIPT` with the script which will be used to deploy the application. This script will receive `keepitsimple` as its first argument.
 
 ## Development usage
 Start the containers:

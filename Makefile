@@ -28,7 +28,7 @@ start:
 	then\
 		docker-compose up -d;\
 	else\
-		python prod/deploy.py;\
+		${DEPLOY_SCRIPT};\
 	fi
 
 ## View containers states
