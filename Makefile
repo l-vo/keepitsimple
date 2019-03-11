@@ -28,7 +28,7 @@ start:
 	then\
 		docker-compose up -d;\
 	else\
-		${DEPLOY_SCRIPT};\
+		${DEPLOY_SCRIPT} keepitsimple;\
 	fi
 
 ## View containers states
