@@ -307,11 +307,12 @@ mondomaine.tld
 monautredomaine.net
 encoreunautredomaine.org
 ```
-Ensuite créons un fichier `valiases`, vous n'aurez probablement pas besoin de le remplir, il permet de créer des alias de comptes de messagerie, par exemple si je veux masquer l'adresse perso de quelqu'un, je pourrais afficher sur mon site `quisuisje@mondomaine.tld`, et dans mon fichier *vialiases*:
+Ensuite créons un fichier `valiases`. Il va remplacer le fichier `/etc/aliases` qui est utilisé lorsque l'on ne se sert pas de comptes mails virtuels. Nous devons donc y redefinir la redirection de `postmaster` vers `root` qui existe dans `/etc/aliases`. Si vous n'avez pas l'intention de créer de compte mail virtuel pour le compte root, alors il est nécessaire aussi que vous redirigiez les mails pour le compte root vers le compte que vous utilisez habituellement: 
 ```
-quisuisje@mondomaine.tld  unemailperso@gmail.com
+postmaster@mondomaine.tld root@mondomaine.tld
+root@mondomaine.tld       moi@mondomaine.tld
 ```
-Mais dans la plupart des cas, vous n'aurez pas besoin de mettre de contenu dans ce fichier.  
+On notera que contrairement au fichier `/etc/aliases`, il est ici nécessaire de spécifier le domaine pour les comptes mails. 
   
 Enfin, l'indispensable fichier `vmaps`, qui va indiquer les chemins relatifs des boites mails dans le dossier `/var/vmail`. Le format est libre mais en général on chosi de regrouper par domaine pour le cas ou des noms existeraient dans plusieurs domaines. Attention à ne pas oublier le `/` de fin, il est particulièrement important car il détermine que nous allons utiliser le format *Maildir* et non *mbox*:
 ```
