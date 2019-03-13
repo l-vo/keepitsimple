@@ -1,9 +1,14 @@
 ---
 title: Installer une galerie photo (Piwigo) sur Raspberry PI
+description: Installation d'une galerie photo (Piwigo) sur Raspberry PI
 date: 2018-04-28 12:24:36
 tags:
-  - Raspberry_Pi
-  - Nginx
+  - raspberry
+  - py
+  - nginx
+  - piwigo
+  - osmc
+  - raspbian
 ---
 ## Quelle gallerie photo ?
 Je cherchais une galerie photo à mettre sur mon Raspberry Pi 3. J'avais précédemment utilisé la galerie propriétaire DSPhoto (Synology) et je cherchais quelque chose s'en rapprochant en terme de fonctionnalités. A savoir:

@@ -1,8 +1,11 @@
 ---
 title: YAML et in_array, mauvaise surprise
+description: Mésavanture sur l'exploitation des types non stricts avec le language YAML et la fonction PHP in_array
 date: 2018-03-18 21:40:13
 tags:
-  - PHP
+  - php
+  - yaml
+  - in_array
 ---
 
 Je vais ici vous conter une petite mésaventure qui m'est arrivée sur une des applications de la société où je travaille. Nous avons un Yaml de configuration qui indique quels clients doivent passer par une action donnée. Le fichier a cette forme:

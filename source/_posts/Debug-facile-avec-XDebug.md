@@ -1,8 +1,14 @@
 ---
 title: Debug facile avec XDEBUG
+description: Examples d'utilisation de XDEBUG dans différents contextes
 date: 2018-04-06 20:48:05
 tags:
-  - PHP
+  - php
+  - xdebug
+  - cli
+  - rest
+  - soap
+  - phpstorm
 ---
 Intéressons nous au debugging d'applications. Tout développeur en fait continuellement dans ses projects. Souvent de la façon la plus basique qui soit:
 ```php

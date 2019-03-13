@@ -3,50 +3,351 @@
 
 
     <url>
-        <loc>http://keepitsimple.l-vo.fr/tags/Nginx/</loc>
-        <lastmod>2018-04-28T20:55:55.000Z</lastmod>
+        <loc>https://keepitsimple.lvo.dev/tags/linux/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://keepitsimple.l-vo.fr/tags/PHP/</loc>
-        <lastmod>2018-12-26T12:16:09.000Z</lastmod>
+        <loc>https://keepitsimple.lvo.dev/tags/debian/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://keepitsimple.l-vo.fr/tags/Composer/</loc>
-        <lastmod>2018-12-26T12:16:09.000Z</lastmod>
+        <loc>https://keepitsimple.lvo.dev/tags/postfix/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://keepitsimple.l-vo.fr/tags/Docker/</loc>
-        <lastmod>2019-01-29T08:21:45.000Z</lastmod>
+        <loc>https://keepitsimple.lvo.dev/tags/dovecot/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://keepitsimple.l-vo.fr/tags/Raspberry-Pi/</loc>
-        <lastmod>2019-02-22T08:53:27.000Z</lastmod>
+        <loc>https://keepitsimple.lvo.dev/tags/ssl/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://keepitsimple.l-vo.fr/tags/Python/</loc>
-        <lastmod>2019-02-22T08:53:27.000Z</lastmod>
+        <loc>https://keepitsimple.lvo.dev/tags/spamassassin/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://keepitsimple.l-vo.fr/tags/Linux/</loc>
-        <lastmod>2019-03-12T21:49:53.000Z</lastmod>
+        <loc>https://keepitsimple.lvo.dev/tags/procmail/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/serveur/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/mail/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/email/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/virtuels/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/webmail/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/roundcube/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/dkim/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/spf/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/maildir/</loc>
+        <lastmod>2019-03-13T10:26:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/xdebug/</loc>
+        <lastmod>2019-03-13T10:28:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/cli/</loc>
+        <lastmod>2019-03-13T10:28:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/rest/</loc>
+        <lastmod>2019-03-13T10:28:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/soap/</loc>
+        <lastmod>2019-03-13T10:28:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/phpstorm/</loc>
+        <lastmod>2019-03-13T10:28:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/nginx/</loc>
+        <lastmod>2019-03-13T10:28:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/piwigo/</loc>
+        <lastmod>2019-03-13T10:28:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/osmc/</loc>
+        <lastmod>2019-03-13T10:28:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/raspbian/</loc>
+        <lastmod>2019-03-13T10:28:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/macos/</loc>
+        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/osx/</loc>
+        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/acl/</loc>
+        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/afp/</loc>
+        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/netatalk/</loc>
+        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/docker-sync/</loc>
+        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/composer/</loc>
+        <lastmod>2019-03-13T10:32:24.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/patch/</loc>
+        <lastmod>2019-03-13T10:32:24.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/raspberry/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/py/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/photos/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/tablette/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/cadre/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/python/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/fotoo/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/photos-picker/</loc>
+        <lastmod>2019-03-13T10:33:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/docker/</loc>
+        <lastmod>2019-03-13T10:34:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/production/</loc>
+        <lastmod>2019-03-13T10:34:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/securite/</loc>
+        <lastmod>2019-03-13T10:34:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/namespaces/</loc>
+        <lastmod>2019-03-13T10:34:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/user/</loc>
+        <lastmod>2019-03-13T10:34:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/iptables/</loc>
+        <lastmod>2019-03-13T10:34:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/php/</loc>
+        <lastmod>2019-03-13T10:35:49.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/yaml/</loc>
+        <lastmod>2019-03-13T10:35:49.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/in-array/</loc>
+        <lastmod>2019-03-13T10:35:49.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

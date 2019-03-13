@@ -5,14 +5,14 @@
 # Site
 title: Keep it simple. Stupid.
 subtitle:
-description: A developer's blog on PHP, docker, git and more !
+description: Du PHP, du Docker et un peu de devops !
 author: Laurent VOULLEMIER
 language: fr-FR
 timezone: Europe/Paris
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://keepitsimple.l-vo.fr
+url: https://keepitsimple.lvo.dev
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

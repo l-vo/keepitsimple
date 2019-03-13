@@ -1,7 +1,13 @@
 ---
 title: Sécuriser ses conteneurs Docker en production
+description: Quelques conseils lorsqu'il s'agit d'utiliser des conteneurs Docker en production
 tags:
-  - Docker
+  - docker
+  - production
+  - sécurité
+  - namespaces
+  - user
+  - iptables
 date: 2018-07-19 11:18:20
 ---
 

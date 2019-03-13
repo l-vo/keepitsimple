@@ -14,7 +14,37 @@
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> linux </tag>
+            
+            <tag> debian </tag>
+            
+            <tag> postfix </tag>
+            
+            <tag> dovecot </tag>
+            
+            <tag> ssl </tag>
+            
+            <tag> spamassassin </tag>
+            
+            <tag> procmail </tag>
+            
+            <tag> serveur </tag>
+            
+            <tag> mail </tag>
+            
+            <tag> email </tag>
+            
+            <tag> virtuels </tag>
+            
+            <tag> webmail </tag>
+            
+            <tag> roundcube </tag>
+            
+            <tag> dkim </tag>
+            
+            <tag> spf </tag>
+            
+            <tag> maildir </tag>
             
         </tags>
       
@@ -33,9 +63,21 @@
       
         <tags>
             
-            <tag> Raspberry_Pi </tag>
+            <tag> raspberry </tag>
             
-            <tag> Python </tag>
+            <tag> py </tag>
+            
+            <tag> photos </tag>
+            
+            <tag> tablette </tag>
+            
+            <tag> cadre </tag>
+            
+            <tag> python </tag>
+            
+            <tag> fotoo </tag>
+            
+            <tag> photos-picker </tag>
             
         </tags>
       
@@ -54,9 +96,11 @@
       
         <tags>
             
-            <tag> PHP </tag>
+            <tag> php </tag>
             
-            <tag> Composer </tag>
+            <tag> composer </tag>
+            
+            <tag> patch </tag>
             
         </tags>
       
@@ -75,7 +119,19 @@
       
         <tags>
             
-            <tag> Docker </tag>
+            <tag> docker </tag>
+            
+            <tag> macos </tag>
+            
+            <tag> osx </tag>
+            
+            <tag> acl </tag>
+            
+            <tag> afp </tag>
+            
+            <tag> netatalk </tag>
+            
+            <tag> docker-sync </tag>
             
         </tags>
       
@@ -94,7 +150,17 @@
       
         <tags>
             
-            <tag> Docker </tag>
+            <tag> docker </tag>
+            
+            <tag> production </tag>
+            
+            <tag> sécurité </tag>
+            
+            <tag> namespaces </tag>
+            
+            <tag> user </tag>
+            
+            <tag> iptables </tag>
             
         </tags>
       
@@ -113,9 +179,17 @@
       
         <tags>
             
-            <tag> Raspberry_Pi </tag>
+            <tag> raspberry </tag>
             
-            <tag> Nginx </tag>
+            <tag> py </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> piwigo </tag>
+            
+            <tag> osmc </tag>
+            
+            <tag> raspbian </tag>
             
         </tags>
       
@@ -134,7 +208,17 @@
       
         <tags>
             
-            <tag> PHP </tag>
+            <tag> php </tag>
+            
+            <tag> xdebug </tag>
+            
+            <tag> cli </tag>
+            
+            <tag> rest </tag>
+            
+            <tag> soap </tag>
+            
+            <tag> phpstorm </tag>
             
         </tags>
       
@@ -153,7 +237,11 @@
       
         <tags>
             
-            <tag> PHP </tag>
+            <tag> php </tag>
+            
+            <tag> yaml </tag>
+            
+            <tag> in_array </tag>
             
         </tags>
       
