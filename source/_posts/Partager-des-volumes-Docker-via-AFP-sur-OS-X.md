@@ -1,7 +1,13 @@
 ---
 title: Partager des volumes Docker via AFP sur Mac
 tags:
-  - Docker
+  - docker
+  - macos
+  - osx
+  - acl
+  - afp
+  - netatalk
+  - docker-sync
 date: 2018-08-16 19:38:08
 ---
 

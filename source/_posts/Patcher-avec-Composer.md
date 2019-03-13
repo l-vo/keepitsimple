@@ -1,8 +1,9 @@
 ---
 title: Patcher avec Composer
 tags:
-  - PHP
-  - Composer
+  - php
+  - composer
+  - patch
 date: 2018-11-24 09:46:18
 ---
 

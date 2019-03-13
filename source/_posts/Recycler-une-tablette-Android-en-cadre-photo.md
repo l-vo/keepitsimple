@@ -1,8 +1,14 @@
 ---
 title: Recycler une tablette Android en cadre photo
 tags:
-  - Python
-  - Raspberry_Pi
+  - raspberry
+  - py
+  - photos
+  - tablette
+  - cadre
+  - python
+  - fotoo
+  - photos-picker
 date: 2019-02-20 14:47:08
 ---
 
