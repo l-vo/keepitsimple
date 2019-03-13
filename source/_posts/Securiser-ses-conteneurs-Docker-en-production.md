@@ -1,5 +1,6 @@
 ---
 title: Sécuriser ses conteneurs Docker en production
+description: Quelques conseils lorsqu'il s'agit d'utiliser des conteneurs Docker en production
 tags:
   - docker
   - production

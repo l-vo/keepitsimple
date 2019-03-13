@@ -1,5 +1,6 @@
 ---
 title: YAML et in_array, mauvaise surprise
+description: Mésavanture sur l'exploitation des types non stricts avec le language YAML et la fonction PHP in_array
 date: 2018-03-18 21:40:13
 tags:
   - php

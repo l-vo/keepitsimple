@@ -1,5 +1,6 @@
 ---
 title: Recycler une tablette Android en cadre photo
+description: Utilisation d'une tablette Android comme cadre photo avec mise à jour automatique des photos.
 tags:
   - raspberry
   - py

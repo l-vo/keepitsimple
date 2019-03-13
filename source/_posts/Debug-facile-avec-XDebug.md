@@ -1,5 +1,6 @@
 ---
 title: Debug facile avec XDEBUG
+description: Examples d'utilisation de XDEBUG dans différents contextes
 date: 2018-04-06 20:48:05
 tags:
   - php

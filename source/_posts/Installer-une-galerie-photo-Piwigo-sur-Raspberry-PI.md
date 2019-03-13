@@ -1,5 +1,6 @@
 ---
 title: Installer une galerie photo (Piwigo) sur Raspberry PI
+description: Installation d'une galerie photo (Piwigo) sur Raspberry PI
 date: 2018-04-28 12:24:36
 tags:
   - raspberry

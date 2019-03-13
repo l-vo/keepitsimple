@@ -1,5 +1,6 @@
 ---
 title: Patcher avec Composer
+description: Patch de dépendances avec Composer
 tags:
   - php
   - composer
