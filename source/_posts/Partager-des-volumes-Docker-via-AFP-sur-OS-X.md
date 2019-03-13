@@ -1,6 +1,6 @@
 ---
 title: Partager des volumes Docker via AFP sur Mac
-description: Mise en place d'une solution performante pour partager des volumes entre Docker et Macos
+description: Mise en place d'une solution performante pour partager des volumes entre Docker et MacOS
 tags:
   - docker
   - macos

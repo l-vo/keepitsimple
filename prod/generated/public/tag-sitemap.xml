@@ -178,48 +178,6 @@
     </url>
 
     <url>
-        <loc>https://keepitsimple.lvo.dev/tags/macos/</loc>
-        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://keepitsimple.lvo.dev/tags/osx/</loc>
-        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://keepitsimple.lvo.dev/tags/acl/</loc>
-        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://keepitsimple.lvo.dev/tags/afp/</loc>
-        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://keepitsimple.lvo.dev/tags/netatalk/</loc>
-        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://keepitsimple.lvo.dev/tags/docker-sync/</loc>
-        <lastmod>2019-03-13T10:31:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://keepitsimple.lvo.dev/tags/composer/</loc>
         <lastmod>2019-03-13T10:32:24.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -290,13 +248,6 @@
     </url>
 
     <url>
-        <loc>https://keepitsimple.lvo.dev/tags/docker/</loc>
-        <lastmod>2019-03-13T10:34:16.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://keepitsimple.lvo.dev/tags/production/</loc>
         <lastmod>2019-03-13T10:34:16.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -348,6 +299,55 @@
     <url>
         <loc>https://keepitsimple.lvo.dev/tags/in-array/</loc>
         <lastmod>2019-03-13T10:35:49.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/docker/</loc>
+        <lastmod>2019-03-13T10:56:01.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/macos/</loc>
+        <lastmod>2019-03-13T10:56:01.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/osx/</loc>
+        <lastmod>2019-03-13T10:56:01.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/acl/</loc>
+        <lastmod>2019-03-13T10:56:01.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/afp/</loc>
+        <lastmod>2019-03-13T10:56:01.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/netatalk/</loc>
+        <lastmod>2019-03-13T10:56:01.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://keepitsimple.lvo.dev/tags/docker-sync/</loc>
+        <lastmod>2019-03-13T10:56:01.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
