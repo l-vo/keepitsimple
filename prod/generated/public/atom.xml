@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://keepitsimple.l-vo.fr/"/>
+  <link href="https://keepitsimple.lvo.dev/"/>
   <updated>2019-03-13T10:26:38.000Z</updated>
-  <id>http://keepitsimple.l-vo.fr/</id>
+  <id>https://keepitsimple.lvo.dev/</id>
   
   <author>
     <name>Laurent VOULLEMIER</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Installer un serveur mail sur Debian 9 (Stretch)</title>
-    <link href="http://keepitsimple.l-vo.fr/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/"/>
-    <id>http://keepitsimple.l-vo.fr/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/</id>
+    <link href="https://keepitsimple.lvo.dev/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/"/>
+    <id>https://keepitsimple.lvo.dev/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/</id>
     <published>2019-03-08T10:34:09.000Z</published>
     <updated>2019-03-13T10:26:38.000Z</updated>
     
@@ -32,44 +32,44 @@
     </summary>
     
     
-      <category term="linux" scheme="http://keepitsimple.l-vo.fr/tags/linux/"/>
+      <category term="linux" scheme="https://keepitsimple.lvo.dev/tags/linux/"/>
     
-      <category term="debian" scheme="http://keepitsimple.l-vo.fr/tags/debian/"/>
+      <category term="debian" scheme="https://keepitsimple.lvo.dev/tags/debian/"/>
     
-      <category term="postfix" scheme="http://keepitsimple.l-vo.fr/tags/postfix/"/>
+      <category term="postfix" scheme="https://keepitsimple.lvo.dev/tags/postfix/"/>
     
-      <category term="dovecot" scheme="http://keepitsimple.l-vo.fr/tags/dovecot/"/>
+      <category term="dovecot" scheme="https://keepitsimple.lvo.dev/tags/dovecot/"/>
     
-      <category term="ssl" scheme="http://keepitsimple.l-vo.fr/tags/ssl/"/>
+      <category term="ssl" scheme="https://keepitsimple.lvo.dev/tags/ssl/"/>
     
-      <category term="spamassassin" scheme="http://keepitsimple.l-vo.fr/tags/spamassassin/"/>
+      <category term="spamassassin" scheme="https://keepitsimple.lvo.dev/tags/spamassassin/"/>
     
-      <category term="procmail" scheme="http://keepitsimple.l-vo.fr/tags/procmail/"/>
+      <category term="procmail" scheme="https://keepitsimple.lvo.dev/tags/procmail/"/>
     
-      <category term="serveur" scheme="http://keepitsimple.l-vo.fr/tags/serveur/"/>
+      <category term="serveur" scheme="https://keepitsimple.lvo.dev/tags/serveur/"/>
     
-      <category term="mail" scheme="http://keepitsimple.l-vo.fr/tags/mail/"/>
+      <category term="mail" scheme="https://keepitsimple.lvo.dev/tags/mail/"/>
     
-      <category term="email" scheme="http://keepitsimple.l-vo.fr/tags/email/"/>
+      <category term="email" scheme="https://keepitsimple.lvo.dev/tags/email/"/>
     
-      <category term="virtuels" scheme="http://keepitsimple.l-vo.fr/tags/virtuels/"/>
+      <category term="virtuels" scheme="https://keepitsimple.lvo.dev/tags/virtuels/"/>
     
-      <category term="webmail" scheme="http://keepitsimple.l-vo.fr/tags/webmail/"/>
+      <category term="webmail" scheme="https://keepitsimple.lvo.dev/tags/webmail/"/>
     
-      <category term="roundcube" scheme="http://keepitsimple.l-vo.fr/tags/roundcube/"/>
+      <category term="roundcube" scheme="https://keepitsimple.lvo.dev/tags/roundcube/"/>
     
-      <category term="dkim" scheme="http://keepitsimple.l-vo.fr/tags/dkim/"/>
+      <category term="dkim" scheme="https://keepitsimple.lvo.dev/tags/dkim/"/>
     
-      <category term="spf" scheme="http://keepitsimple.l-vo.fr/tags/spf/"/>
+      <category term="spf" scheme="https://keepitsimple.lvo.dev/tags/spf/"/>
     
-      <category term="maildir" scheme="http://keepitsimple.l-vo.fr/tags/maildir/"/>
+      <category term="maildir" scheme="https://keepitsimple.lvo.dev/tags/maildir/"/>
     
   </entry>
   
   <entry>
     <title>Recycler une tablette Android en cadre photo</title>
-    <link href="http://keepitsimple.l-vo.fr/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/"/>
-    <id>http://keepitsimple.l-vo.fr/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/</id>
+    <link href="https://keepitsimple.lvo.dev/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/"/>
+    <id>https://keepitsimple.lvo.dev/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/</id>
     <published>2019-02-20T13:47:08.000Z</published>
     <updated>2019-03-13T10:33:35.000Z</updated>
     
@@ -82,28 +82,28 @@
     </summary>
     
     
-      <category term="raspberry" scheme="http://keepitsimple.l-vo.fr/tags/raspberry/"/>
+      <category term="raspberry" scheme="https://keepitsimple.lvo.dev/tags/raspberry/"/>
     
-      <category term="py" scheme="http://keepitsimple.l-vo.fr/tags/py/"/>
+      <category term="py" scheme="https://keepitsimple.lvo.dev/tags/py/"/>
     
-      <category term="photos" scheme="http://keepitsimple.l-vo.fr/tags/photos/"/>
+      <category term="photos" scheme="https://keepitsimple.lvo.dev/tags/photos/"/>
     
-      <category term="tablette" scheme="http://keepitsimple.l-vo.fr/tags/tablette/"/>
+      <category term="tablette" scheme="https://keepitsimple.lvo.dev/tags/tablette/"/>
     
-      <category term="cadre" scheme="http://keepitsimple.l-vo.fr/tags/cadre/"/>
+      <category term="cadre" scheme="https://keepitsimple.lvo.dev/tags/cadre/"/>
     
-      <category term="python" scheme="http://keepitsimple.l-vo.fr/tags/python/"/>
+      <category term="python" scheme="https://keepitsimple.lvo.dev/tags/python/"/>
     
-      <category term="fotoo" scheme="http://keepitsimple.l-vo.fr/tags/fotoo/"/>
+      <category term="fotoo" scheme="https://keepitsimple.lvo.dev/tags/fotoo/"/>
     
-      <category term="photos-picker" scheme="http://keepitsimple.l-vo.fr/tags/photos-picker/"/>
+      <category term="photos-picker" scheme="https://keepitsimple.lvo.dev/tags/photos-picker/"/>
     
   </entry>
   
   <entry>
     <title>Patcher avec Composer</title>
-    <link href="http://keepitsimple.l-vo.fr/2018/11/24/Patcher-avec-Composer/"/>
-    <id>http://keepitsimple.l-vo.fr/2018/11/24/Patcher-avec-Composer/</id>
+    <link href="https://keepitsimple.lvo.dev/2018/11/24/Patcher-avec-Composer/"/>
+    <id>https://keepitsimple.lvo.dev/2018/11/24/Patcher-avec-Composer/</id>
     <published>2018-11-24T08:46:18.000Z</published>
     <updated>2019-03-13T10:32:24.000Z</updated>
     
@@ -116,18 +116,18 @@
     </summary>
     
     
-      <category term="php" scheme="http://keepitsimple.l-vo.fr/tags/php/"/>
+      <category term="php" scheme="https://keepitsimple.lvo.dev/tags/php/"/>
     
-      <category term="composer" scheme="http://keepitsimple.l-vo.fr/tags/composer/"/>
+      <category term="composer" scheme="https://keepitsimple.lvo.dev/tags/composer/"/>
     
-      <category term="patch" scheme="http://keepitsimple.l-vo.fr/tags/patch/"/>
+      <category term="patch" scheme="https://keepitsimple.lvo.dev/tags/patch/"/>
     
   </entry>
   
   <entry>
     <title>Partager des volumes Docker via AFP sur Mac</title>
-    <link href="http://keepitsimple.l-vo.fr/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/"/>
-    <id>http://keepitsimple.l-vo.fr/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/</id>
+    <link href="https://keepitsimple.lvo.dev/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/"/>
+    <id>https://keepitsimple.lvo.dev/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/</id>
     <published>2018-08-16T17:38:08.000Z</published>
     <updated>2019-03-13T10:31:25.000Z</updated>
     
@@ -140,26 +140,26 @@
     </summary>
     
     
-      <category term="docker" scheme="http://keepitsimple.l-vo.fr/tags/docker/"/>
+      <category term="docker" scheme="https://keepitsimple.lvo.dev/tags/docker/"/>
     
-      <category term="macos" scheme="http://keepitsimple.l-vo.fr/tags/macos/"/>
+      <category term="macos" scheme="https://keepitsimple.lvo.dev/tags/macos/"/>
     
-      <category term="osx" scheme="http://keepitsimple.l-vo.fr/tags/osx/"/>
+      <category term="osx" scheme="https://keepitsimple.lvo.dev/tags/osx/"/>
     
-      <category term="acl" scheme="http://keepitsimple.l-vo.fr/tags/acl/"/>
+      <category term="acl" scheme="https://keepitsimple.lvo.dev/tags/acl/"/>
     
-      <category term="afp" scheme="http://keepitsimple.l-vo.fr/tags/afp/"/>
+      <category term="afp" scheme="https://keepitsimple.lvo.dev/tags/afp/"/>
     
-      <category term="netatalk" scheme="http://keepitsimple.l-vo.fr/tags/netatalk/"/>
+      <category term="netatalk" scheme="https://keepitsimple.lvo.dev/tags/netatalk/"/>
     
-      <category term="docker-sync" scheme="http://keepitsimple.l-vo.fr/tags/docker-sync/"/>
+      <category term="docker-sync" scheme="https://keepitsimple.lvo.dev/tags/docker-sync/"/>
     
   </entry>
   
   <entry>
     <title>Sécuriser ses conteneurs Docker en production</title>
-    <link href="http://keepitsimple.l-vo.fr/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/"/>
-    <id>http://keepitsimple.l-vo.fr/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/</id>
+    <link href="https://keepitsimple.lvo.dev/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/"/>
+    <id>https://keepitsimple.lvo.dev/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/</id>
     <published>2018-07-19T09:18:20.000Z</published>
     <updated>2019-03-13T10:34:16.000Z</updated>
     
@@ -172,24 +172,24 @@
     </summary>
     
     
-      <category term="docker" scheme="http://keepitsimple.l-vo.fr/tags/docker/"/>
+      <category term="docker" scheme="https://keepitsimple.lvo.dev/tags/docker/"/>
     
-      <category term="production" scheme="http://keepitsimple.l-vo.fr/tags/production/"/>
+      <category term="production" scheme="https://keepitsimple.lvo.dev/tags/production/"/>
     
-      <category term="sécurité" scheme="http://keepitsimple.l-vo.fr/tags/securite/"/>
+      <category term="sécurité" scheme="https://keepitsimple.lvo.dev/tags/securite/"/>
     
-      <category term="namespaces" scheme="http://keepitsimple.l-vo.fr/tags/namespaces/"/>
+      <category term="namespaces" scheme="https://keepitsimple.lvo.dev/tags/namespaces/"/>
     
-      <category term="user" scheme="http://keepitsimple.l-vo.fr/tags/user/"/>
+      <category term="user" scheme="https://keepitsimple.lvo.dev/tags/user/"/>
     
-      <category term="iptables" scheme="http://keepitsimple.l-vo.fr/tags/iptables/"/>
+      <category term="iptables" scheme="https://keepitsimple.lvo.dev/tags/iptables/"/>
     
   </entry>
   
   <entry>
     <title>Installer une galerie photo (Piwigo) sur Raspberry PI</title>
-    <link href="http://keepitsimple.l-vo.fr/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/"/>
-    <id>http://keepitsimple.l-vo.fr/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/</id>
+    <link href="https://keepitsimple.lvo.dev/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/"/>
+    <id>https://keepitsimple.lvo.dev/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/</id>
     <published>2018-04-28T10:24:36.000Z</published>
     <updated>2019-03-13T10:28:44.000Z</updated>
     
@@ -202,24 +202,24 @@
     </summary>
     
     
-      <category term="raspberry" scheme="http://keepitsimple.l-vo.fr/tags/raspberry/"/>
+      <category term="raspberry" scheme="https://keepitsimple.lvo.dev/tags/raspberry/"/>
     
-      <category term="py" scheme="http://keepitsimple.l-vo.fr/tags/py/"/>
+      <category term="py" scheme="https://keepitsimple.lvo.dev/tags/py/"/>
     
-      <category term="nginx" scheme="http://keepitsimple.l-vo.fr/tags/nginx/"/>
+      <category term="nginx" scheme="https://keepitsimple.lvo.dev/tags/nginx/"/>
     
-      <category term="piwigo" scheme="http://keepitsimple.l-vo.fr/tags/piwigo/"/>
+      <category term="piwigo" scheme="https://keepitsimple.lvo.dev/tags/piwigo/"/>
     
-      <category term="osmc" scheme="http://keepitsimple.l-vo.fr/tags/osmc/"/>
+      <category term="osmc" scheme="https://keepitsimple.lvo.dev/tags/osmc/"/>
     
-      <category term="raspbian" scheme="http://keepitsimple.l-vo.fr/tags/raspbian/"/>
+      <category term="raspbian" scheme="https://keepitsimple.lvo.dev/tags/raspbian/"/>
     
   </entry>
   
   <entry>
     <title>Debug facile avec XDEBUG</title>
-    <link href="http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/"/>
-    <id>http://keepitsimple.l-vo.fr/2018/04/06/Debug-facile-avec-XDebug/</id>
+    <link href="https://keepitsimple.lvo.dev/2018/04/06/Debug-facile-avec-XDebug/"/>
+    <id>https://keepitsimple.lvo.dev/2018/04/06/Debug-facile-avec-XDebug/</id>
     <published>2018-04-06T18:48:05.000Z</published>
     <updated>2019-03-13T10:28:07.000Z</updated>
     
@@ -232,24 +232,24 @@
     </summary>
     
     
-      <category term="php" scheme="http://keepitsimple.l-vo.fr/tags/php/"/>
+      <category term="php" scheme="https://keepitsimple.lvo.dev/tags/php/"/>
     
-      <category term="xdebug" scheme="http://keepitsimple.l-vo.fr/tags/xdebug/"/>
+      <category term="xdebug" scheme="https://keepitsimple.lvo.dev/tags/xdebug/"/>
     
-      <category term="cli" scheme="http://keepitsimple.l-vo.fr/tags/cli/"/>
+      <category term="cli" scheme="https://keepitsimple.lvo.dev/tags/cli/"/>
     
-      <category term="rest" scheme="http://keepitsimple.l-vo.fr/tags/rest/"/>
+      <category term="rest" scheme="https://keepitsimple.lvo.dev/tags/rest/"/>
     
-      <category term="soap" scheme="http://keepitsimple.l-vo.fr/tags/soap/"/>
+      <category term="soap" scheme="https://keepitsimple.lvo.dev/tags/soap/"/>
     
-      <category term="phpstorm" scheme="http://keepitsimple.l-vo.fr/tags/phpstorm/"/>
+      <category term="phpstorm" scheme="https://keepitsimple.lvo.dev/tags/phpstorm/"/>
     
   </entry>
   
   <entry>
     <title>YAML et in_array, mauvaise surprise</title>
-    <link href="http://keepitsimple.l-vo.fr/2018/03/18/YAML-et-in_array/"/>
-    <id>http://keepitsimple.l-vo.fr/2018/03/18/YAML-et-in_array/</id>
+    <link href="https://keepitsimple.lvo.dev/2018/03/18/YAML-et-in_array/"/>
+    <id>https://keepitsimple.lvo.dev/2018/03/18/YAML-et-in_array/</id>
     <published>2018-03-18T20:40:13.000Z</published>
     <updated>2019-03-13T10:35:49.000Z</updated>
     
@@ -262,11 +262,11 @@
     </summary>
     
     
-      <category term="php" scheme="http://keepitsimple.l-vo.fr/tags/php/"/>
+      <category term="php" scheme="https://keepitsimple.lvo.dev/tags/php/"/>
     
-      <category term="yaml" scheme="http://keepitsimple.l-vo.fr/tags/yaml/"/>
+      <category term="yaml" scheme="https://keepitsimple.lvo.dev/tags/yaml/"/>
     
-      <category term="in_array" scheme="http://keepitsimple.l-vo.fr/tags/in-array/"/>
+      <category term="in_array" scheme="https://keepitsimple.lvo.dev/tags/in-array/"/>
     
   </entry>
   
