@@ -18,7 +18,7 @@ $ sudo gitlab-runner register -n \
    --url https://gitlab.com/ \
    --registration-token MY_TOKEN \
    --executor shell \
-   --description "My Runner for megateuf"
+   --description "My Runner for keepitsimple"
 ```
 
 ## Development usage
