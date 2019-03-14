@@ -9,9 +9,9 @@ SHELL := /bin/bash
 build:
 	@if [ -z ${GITLAB_CI} ];\
 	then\
-		docker-compose build --no-cache;\
+		@docker-compose build --no-cache;\
 	else\
-		docker build --no-cache -t ${DOCKER_NAMESPACE}/keepitsimple prod;\
+		@docker build --no-cache -t ${DOCKER_NAMESPACE}/keepitsimple prod;\
 	fi
 
 ## Remove containers
