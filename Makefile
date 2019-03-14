@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 
-.PHONY: build clean exec start status stop
+.PHONY: build clean exec new start status stop
 
 ## ------
 
@@ -9,7 +9,7 @@ SHELL := /bin/bash
 build:
 	@if [ -z ${GITLAB_CI} ];\
 	then\
-		docker-compose build;\
+		docker-compose --no-cache build;\
 	else\
 		docker build --no-cache -t ${DOCKER_NAMESPACE}/keepitsimple prod;\
 	fi
@@ -21,6 +21,9 @@ clean:
 ## Exec a shell into hexo container
 exec:
 	@docker-compose exec hexo bash
+
+## Build, stop, remove and start containers
+new: build stop clean start
 
 ## Start containers
 start:
