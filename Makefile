@@ -9,7 +9,7 @@ SHELL := /bin/bash
 build:
 	@if [ -z ${GITLAB_CI} ];\
 	then\
-		docker-compose build;\
+		docker-compose --no-cache build;\
 	else\
 		docker build --no-cache -t ${DOCKER_NAMESPACE}/keepitsimple prod;\
 	fi
