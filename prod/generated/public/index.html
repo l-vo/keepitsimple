@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Keep it simple. Stupid.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Du PHP, du Docker et un peu de devops !">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Keep it simple. Stupid.">
+<meta property="og:url" content="https://keepitsimple.lvo.dev/index.html">
+<meta property="og:site_name" content="Keep it simple. Stupid.">
+<meta property="og:description" content="Du PHP, du Docker et un peu de devops !">
+<meta property="og:locale" content="fr-FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Keep it simple. Stupid.">
+<meta name="twitter:description" content="Du PHP, du Docker et un peu de devops !">
+  
+    <link rel="alternative" href="/atom.xml" title="Keep it simple. Stupid." type="application/atom+xml">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/style.css">
+  
+    
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-116065119-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+  
+
+</head>
+</html>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/l-vo"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">Keep it simple. Stupid.</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor"></div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Accueil</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/a-propos">A propos</a>
+      
+      <a class="main-nav-link" href="/rechercher" id="search-link">Rechercher</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main">
+  
+    <article id="post-Installer-un-serveur-mail-sur-Debian-9-Stretch" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/" class="article-date">
+  <time datetime="2019-03-08T10:34:09.000Z" itemprop="datePublished">08/03/2019</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/">Installer un serveur mail sur Debian 9 (Stretch)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Il m’arrive de temps à autre de changer de serveur dedié; pour en prendre un qui corresponde plus à mes besoins du moment ou simplement en faveur d’une offre plus intéressante. Ma grande hantise dans ces moments là, c’est la réinstallation du serveur de mail. N’étant pas “sysadmin”, j’y passe à chaque fois beaucoup trop de temps à mon goût, en montant ça à tatons au fil des articles que je trouve ici et là sur le web.<br>Ce problème me décide aujourd’hui à écrire un article, qui me permettra d’avoir une doc qui corresponde à mes besoins et que je sois sûr de retrouver la prochaine fois que j’en aurais besoin.<br>
+        
+          </p><p class="article-more-link">
+            <a href="/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/debian/">debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dkim/">dkim</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dovecot/">dovecot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/email/">email</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mail/">mail</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maildir/">maildir</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/postfix/">postfix</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/procmail/">procmail</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/roundcube/">roundcube</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/serveur/">serveur</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spamassassin/">spamassassin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spf/">spf</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssl/">ssl</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/virtuels/">virtuels</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webmail/">webmail</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/" data-id="cjtpm9510002d01qsq7n9cqu1" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Recycler-une-tablette-Android-en-cadre-photo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/" class="article-date">
+  <time datetime="2019-02-20T13:47:08.000Z" itemprop="datePublished">20/02/2019</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/">Recycler une tablette Android en cadre photo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>L’éternel problème des cadres photos, c’est qu’il faut mettre les photos à jour. Et peu de gens prennent la peine de le faire, que ce soit sur une carte SD ou sur un compte Dropbox ou autre (pour les cadres photos wifi qui cela dit ne sont pas légions).<br>Nous allons voir ici comment utiliser une tablette Android comme cadre photo et la mettre automatiquement à jour avec des photos stockées sur un Raspberry Pi (ou un autre système allumé en permanence).<br>
+        
+          </p><p class="article-more-link">
+            <a href="/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cadre/">cadre</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fotoo/">fotoo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/photos/">photos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/photos-picker/">photos-picker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/py/">py</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspberry/">raspberry</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tablette/">tablette</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/" data-id="cjtpm9500000u01qsde0ng8f5" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Patcher-avec-Composer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2018/11/24/Patcher-avec-Composer/" class="article-date">
+  <time datetime="2018-11-24T08:46:18.000Z" itemprop="datePublished">24/11/2018</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/24/Patcher-avec-Composer/">Patcher avec Composer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Récemment, sans rien que nous ayons modifié de particulier, <code>simple-phpunit</code> (qui lance nos tests Symfony) ne fonctionnait plus. Plus embêtant encore, ce problème faisait échouer nos CI. Après une courte investigation, il s’est avéré que <code>simple-phpunit</code> (maintenu par Symfony) reposait sur des branches de PHPUNIT. Certaines anciennes branches ayant été supprimés du repository (probablement car elles vont cesser d’être maintenues), <code>simple-phpunit</code> ne pouvait plus fonctionner.</p>
+<h1 id="Quelle-solution"><a href="#Quelle-solution" class="headerlink" title="Quelle solution ?"></a>Quelle solution ?</h1>
+        
+          <p class="article-more-link">
+            <a href="/2018/11/24/Patcher-avec-Composer/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/composer/">composer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/patch/">patch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2018/11/24/Patcher-avec-Composer/" data-id="cjtpm94zd000201qs63ei54zs" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2018/11/24/Patcher-avec-Composer/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Partager-des-volumes-Docker-via-AFP-sur-OS-X" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/" class="article-date">
+  <time datetime="2018-08-16T17:38:08.000Z" itemprop="datePublished">16/08/2018</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/">Partager des volumes Docker via AFP sur Mac</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Suite à la lecture de <a href="https://jolicode.com/blog/ma-stack-de-developpement-avec-docker-sous-macos-x" target="_blank" rel="noopener">cet article</a>, je voudrais faire un court retour d’expérience sur une solution alternative de partage de volumes sous macOS (anciennement OS X) que je privilégie depuis un certain temps. </p>
+<h2 id="La-problematique"><a href="#La-problematique" class="headerlink" title="La problématique"></a>La problématique</h2><p>Si depuis que j’ai goûté à Docker, je ne peux m’en passer pour mes conteneurs de développement, j’ai vite été confronté à des limitations sur OS X:</p>
+<ul>
+<li>Les performances médiocres lorsque je partage un dossier entre ma machine hôte et mon conteneur (les projects Symfony sont très lents même sans activer XDebug).</li>
+<li>Les fonctionnalités limités du volume partagé. Il ne permet par exemple pas d’utiliser les ACL comme préconisé par Symfony pour jongler entre les actions du server web (user www-data) et celles de la console (user courant).
+        
+          <p class="article-more-link">
+            <a href="/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/#more">Read More</a>
+          </p>
+        
+      
+    </li></ul></div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/acl/">acl</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/afp/">afp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker-sync/">docker-sync</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macos/">macos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/netatalk/">netatalk</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/osx/">osx</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/" data-id="cjtpm9502000w01qsnvtzsfcu" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Securiser-ses-conteneurs-Docker-en-production" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/" class="article-date">
+  <time datetime="2018-07-19T09:18:20.000Z" itemprop="datePublished">19/07/2018</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/">Sécuriser ses conteneurs Docker en production</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Docker est à l’origine conçu pour créer des conteneurs à la volée et effectuer des developpements/tests dans différents environments. Mais sa simplicité d’utilisation et son écosystème grandissant pousse de plus en plus ses adeptes à vouloir l’utiliser en prod. D’autant que de nouveaux outils (Kubernetes, Swarm…) et des améliorations récentes (user namespaces, variables d’environnement dans les docker-compose…) vont dans ce sens.  </p>
+<p>Malheureusement les conteneurs Docker sont de base assez peu sécurisés. Nous allons<br>voir quelques astuces simples pour limiter les possibilités d’attaques lorsque vous déploierez vos conteneurs en production. </p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iptables/">iptables</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/namespaces/">namespaces</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/production/">production</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/securite/">sécurité</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/user/">user</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/" data-id="cjtpm94z5000001qs7jrdnmfm" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/" class="article-date">
+  <time datetime="2018-04-28T10:24:36.000Z" itemprop="datePublished">28/04/2018</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/">Installer une galerie photo (Piwigo) sur Raspberry PI</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Quelle-gallerie-photo"><a href="#Quelle-gallerie-photo" class="headerlink" title="Quelle gallerie photo ?"></a>Quelle gallerie photo ?</h2><p>Je cherchais une galerie photo à mettre sur mon Raspberry Pi 3. J’avais précédemment utilisé la galerie propriétaire DSPhoto (Synology) et je cherchais quelque chose s’en rapprochant en terme de fonctionnalités. A savoir:</p>
+<ul>
+<li>Possibilité d’uploader les photos par lot</li>
+<li>Existence d’une application ou au moins d’un site web adapté aux mobiles</li>
+<li>Capacité à présenter les photos en miniatures mais aussi de les télécharger en qualité originale si besoin</li>
+<li>Gestion d’albums privés et possibilité d’y accéder sans identification via un lien</li>
+<li>Support de certains formats vidéos</li>
+</ul>
+<p>Après quelques recherches, j’ai fini par tomber sur Piwigo (<a href="http://fr.piwigo.org/)" target="_blank" rel="noopener">http://fr.piwigo.org/)</a>, une galerie open source avec un système de plugin permettant d’étendre les fonctionnalités de base à celles que je recherchais.<br>
+        
+          </p><p class="article-more-link">
+            <a href="/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/osmc/">osmc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/piwigo/">piwigo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/py/">py</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspberry/">raspberry</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspbian/">raspbian</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/" data-id="cjtpm9503000x01qs49tits0j" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2018/04/28/Installer-une-galerie-photo-Piwigo-sur-Raspberry-PI/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Debug-facile-avec-XDebug" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2018/04/06/Debug-facile-avec-XDebug/" class="article-date">
+  <time datetime="2018-04-06T18:48:05.000Z" itemprop="datePublished">06/04/2018</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/06/Debug-facile-avec-XDebug/">Debug facile avec XDEBUG</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Intéressons nous au debugging d’applications. Tout développeur en fait continuellement dans ses projects. Souvent de la façon la plus basique qui soit:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> $myVar; <span class="keyword">exit</span>();</span><br></pre></td></tr></table></figure></p>
+<p>Mais lorsque l’on a besoin de suivre l’execution dans une pile de plusieurs fonctions et à l’intérieur de chacune d’elle visualiser plusieurs variables pour connaitre le contexte, la méthode ci-dessus ne suffit plus. C’est là qu’intervient XDEBUG.<br>
+        
+          </p><p class="article-more-link">
+            <a href="/2018/04/06/Debug-facile-avec-XDebug/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cli/">cli</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/phpstorm/">phpstorm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rest/">rest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/soap/">soap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xdebug/">xdebug</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2018/04/06/Debug-facile-avec-XDebug/" data-id="cjtpm94zz000t01qsg8kxl0vt" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2018/04/06/Debug-facile-avec-XDebug/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-YAML-et-in_array" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2018/03/18/YAML-et-in_array/" class="article-date">
+  <time datetime="2018-03-18T20:40:13.000Z" itemprop="datePublished">18/03/2018</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/18/YAML-et-in_array/">YAML et in_array, mauvaise surprise</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Je vais ici vous conter une petite mésaventure qui m’est arrivée sur une des applications de la société où je travaille. Nous avons un Yaml de configuration qui indique quels clients doivent passer par une action donnée. Le fichier a cette forme:<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">targetedCustomers:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">auchan</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">leclerc</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">geant</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">cora</span></span><br></pre></td></tr></table></figure></p>
+<p>Ensuite, rien d’extraordinaire, on utilise in_array pour tester si le client courant est concerné par l’action proposée:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Some stuff for parsing Yaml before</span></span><br><span class="line"><span class="comment">// $targetedCustomers is worth ['auchan', 'leclerc', 'geant', 'cora'] </span></span><br><span class="line"><span class="keyword">if</span> (in_array($currentCustomer, $targetedCustomers)) &#123;</span><br><span class="line">  <span class="comment">// Execute the action</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Jusque là tout va bien. Mais récemment nous avons ajouté le client “yes”. Drôle de nom pour un client vous allez me dire. Il n’empêche.</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">targetedCustomers:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">auchan</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">leclerc</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">geant</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">cora</span></span><br><span class="line"><span class="bullet">  -</span> <span class="literal">yes</span></span><br></pre></td></tr></table></figure>
+<p>Et tout d’un coup <strong>TOUS</strong> nos clients se sont mis à être elligibles pour l’action précédemment évoquée. Pas glop. Comment en est-on arrivé à ce résultat ?<br>
+        
+          </p><p class="article-more-link">
+            <a href="/2018/03/18/YAML-et-in_array/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/in-array/">in_array</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yaml/">yaml</a></li></ul>
+
+        <a data-url="https://keepitsimple.lvo.dev/2018/03/18/YAML-et-in_array/" data-id="cjtpm94zi000501qs4jx634jl" class="article-share-link">Partager</a>
+        
+          <a href="https://keepitsimple.lvo.dev/2018/03/18/YAML-et-in_array/#disqus_thread" class="article-comment-link">Commentaires</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+  
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/08/Installer-un-serveur-mail-sur-Debian-9-Stretch/">Installer un serveur mail sur Debian 9 (Stretch)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/20/Recycler-une-tablette-Android-en-cadre-photo/">Recycler une tablette Android en cadre photo</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/24/Patcher-avec-Composer/">Patcher avec Composer</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/16/Partager-des-volumes-Docker-via-AFP-sur-OS-X/">Partager des volumes Docker via AFP sur Mac</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/19/Securiser-ses-conteneurs-Docker-en-production/">Sécuriser ses conteneurs Docker en production</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/acl/">acl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/afp/">afp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cadre/">cadre</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cli/">cli</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/composer/">composer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/debian/">debian</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dkim/">dkim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker-sync/">docker-sync</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dovecot/">dovecot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/email/">email</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fotoo/">fotoo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/in-array/">in_array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iptables/">iptables</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macos/">macos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mail/">mail</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maildir/">maildir</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/namespaces/">namespaces</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/netatalk/">netatalk</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/osmc/">osmc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/osx/">osx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/patch/">patch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/photos/">photos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/photos-picker/">photos-picker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phpstorm/">phpstorm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/piwigo/">piwigo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/postfix/">postfix</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/procmail/">procmail</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/production/">production</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/py/">py</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry/">raspberry</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspbian/">raspbian</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rest/">rest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/roundcube/">roundcube</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/serveur/">serveur</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/soap/">soap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spamassassin/">spamassassin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spf/">spf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/securite/">sécurité</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tablette/">tablette</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/user/">user</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/virtuels/">virtuels</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webmail/">webmail</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xdebug/">xdebug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yaml/">yaml</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">mars 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">février 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">novembre 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">août 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">juillet 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">avril 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">mars 2018</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Laurent VOULLEMIER<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Accueil</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/a-propos" class="mobile-nav-link">A propos</a>
+  
+  <a href="/rechercher" class="mobile-nav-link st-search-show-outputs">Rechercher</a>
+</nav>
+
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="Vers le haut"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+<script>
+  var disqus_shortname = 'keep-it-simple-stupid';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//ghsite.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+     var search_path = "search.xml";
+     if (search_path.length == 0) {
+     	search_path = "search.xml";
+     }
+     var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+</div>
+</body>
+</html>
