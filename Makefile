@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 
-.PHONY: build clean exec new start status stop
+.PHONY: build clean exec new restart start status stop
 
 ## ------
 
@@ -24,6 +24,9 @@ exec:
 
 ## Build, stop, remove and start containers
 new: build stop clean start
+
+## Restart containers
+restart: stop start
 
 ## Start containers
 start:
