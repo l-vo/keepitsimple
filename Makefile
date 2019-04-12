@@ -7,17 +7,17 @@ SHELL := /bin/bash
 
 ## Build Dockerfiles
 build:
-	@if [ -z ${GITLAB_CI} ];\
-	then\
-		docker-compose build;\
-	else\
-		cp -r blog/generated prod/;\
-		docker build -t ${DOCKER_NAMESPACE}/keepitsimple prod;\
+	@if [ -z ${GITLAB_CI} ]; \
+	then \
+		docker-compose build; \
+	else \
+		cp -r blog/generated prod/; \
+		docker build -t ${DOCKER_NAMESPACE}/keepitsimple prod; \
 	fi
 
 ## Remove containers
 clean:
-	@docker-compose rm -vf;\
+	@docker-compose rm -vf
 
 ## Exec a shell into hexo container
 exec:
@@ -35,11 +35,11 @@ restart: stop start
 
 ## Start containers
 start:
-	@if [ -z ${GITLAB_CI} ];\
-	then\
-		docker-compose up -d;\
-	else\
-		${DEPLOY_SCRIPT} keepitsimple;\
+	@if [ -z ${GITLAB_CI} ]; \
+	then \
+		docker-compose up -d; \
+	else \
+		${DEPLOY_SCRIPT} keepitsimple; \
 	fi
 
 ## View containers states
