@@ -59,8 +59,6 @@ then
 
     # Fix sublanguages in hexo (see https://github.com/hexojs/hexo-util/pull/37)
     sed -i "s/require('highlight.js\/lib\/highlight')/require('highlight.js')/" node_modules/hexo-util/lib/highlight.js
-    # Fix problem on some sublanguages (i.e. Docker)
-    sed -i 's/end: \/\[^\\\\]\\n\//end: \/[^\\\\]$\//' node_modules/highlight.js/lib/languages/dockerfile.js
 fi
 
 # Hexo binary shortcut
