@@ -26,6 +26,10 @@ Start the containers:
 ```bash
 $ make start
 ```
+Note the first time you launch the containers, theme and node modules are installed. It can take a while. Use the following command to see the install progression:
+```bash
+$ make logs
+```
 Stop the containers:
 ```bash
 $ make stop

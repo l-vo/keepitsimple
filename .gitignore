@@ -1,3 +1,8 @@
 # IDE files
 .idea/
 *.iml
+
+# Hexo files
+/blog/node_modules
+/blog/themes
+/blog/db.json
