@@ -1,26 +1,31 @@
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 
-.PHONY: build clean exec new restart start status stop
+.PHONY: build clean exec logs new restart start status stop
 
 ## ------
 
 ## Build Dockerfiles
 build:
-	@if [ -z ${GITLAB_CI} ];\
-	then\
-		docker-compose build;\
-	else\
-		docker build -t ${DOCKER_NAMESPACE}/keepitsimple prod;\
+	@if [ -z ${GITLAB_CI} ]; \
+	then \
+		docker-compose build; \
+	else \
+		cp -r blog/generated prod/; \
+		docker build -t ${DOCKER_NAMESPACE}/keepitsimple prod; \
 	fi
 
 ## Remove containers
 clean:
-	@docker-compose rm -vf;\
+	@docker-compose rm -vf
 
 ## Exec a shell into hexo container
 exec:
 	@docker-compose exec hexo bash
+
+## View logs
+logs:
+	@docker-compose logs -f
 
 ## Build, stop, remove and start containers
 new: build stop clean start
@@ -30,11 +35,11 @@ restart: stop start
 
 ## Start containers
 start:
-	@if [ -z ${GITLAB_CI} ];\
-	then\
-		docker-compose up -d;\
-	else\
-		${DEPLOY_SCRIPT} keepitsimple;\
+	@if [ -z ${GITLAB_CI} ]; \
+	then \
+		docker-compose up -d; \
+	else \
+		${DEPLOY_SCRIPT} keepitsimple; \
 	fi
 
 ## View containers states
