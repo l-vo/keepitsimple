@@ -2,7 +2,6 @@
 menu:
   Accueil: /
   Archives: /archives
-  A propos: /a-propos
 rss: /atom.xml
 github: https://github.com/l-vo
 logo_title: MyLogo
