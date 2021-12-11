@@ -1,4 +1,4 @@
-FROM node:8.15.1
+FROM node:8.15
 
 RUN mkdir /tmp/theme
 COPY theme /tmp/theme
