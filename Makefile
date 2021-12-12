@@ -7,13 +7,7 @@ SHELL := /bin/bash
 
 ## Build Dockerfiles
 build:
-	@if [ -z ${GITLAB_CI} ]; \
-	then \
-		docker-compose build; \
-	else \
-		cp -r blog/generated prod/; \
-		docker build -t ${DOCKER_NAMESPACE}/keepitsimple prod; \
-	fi
+	@docker-compose build
 
 ## Remove containers
 clean:
@@ -35,12 +29,7 @@ restart: stop start
 
 ## Start containers
 start:
-	@if [ -z ${GITLAB_CI} ]; \
-	then \
-		docker-compose up -d; \
-	else \
-		${DEPLOY_SCRIPT} keepitsimple; \
-	fi
+	@docker-compose up -d
 
 ## View containers states
 status:
