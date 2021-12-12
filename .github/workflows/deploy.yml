@@ -25,7 +25,7 @@ jobs:
           tags: lvo9/keepitsimple
           cache-from: type=registry,ref=lvo9/keepitsimple:latest
           cache-to: type=inline
-  generation-and-publish:
+  generate-and-publish:
     needs: docker-build
     runs-on: ubuntu-latest
     container: lvo9/keepitsimple:latest

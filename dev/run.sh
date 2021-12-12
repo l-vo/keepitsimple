@@ -54,6 +54,7 @@ then
     echo -e "@media mq-mobile\n  .nav-icon\n    &:first-child\n      padding-left: 0\n    &:last-child\n      padding-right: 0" >> "$ROOT/themes/paperbox/source/css/_partial/header.styl"
 
     # Search feature
+    cp /tmp/theme/search.js "$ROOT/themes/paperbox/source/js/"
     cat /tmp/theme/search.ejs >> "$ROOT/themes/paperbox/layout/_partial/after-footer.ejs"
     sed -i 's/<a class="main-nav-link st-search-show-outputs"><%= __(.search.) %><\/a>/<a class="main-nav-link" href="\/rechercher" id="search-link"><%= __("search") %><\/a>/' "$ROOT/themes/paperbox/layout/_partial/header.ejs"
     sed -i 's/<a href="#search" class="mobile-nav-link st-search-show-outputs"><%= __(.search.) %><\/a>/<a href="\/rechercher" class="mobile-nav-link st-search-show-outputs"><%= __("search") %><\/a>/' "$ROOT/themes/paperbox/layout/_partial/mobile-nav.ejs"
