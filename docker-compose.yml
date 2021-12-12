@@ -1,14 +1,6 @@
 version: "3"
 
 services:
-
-  nginx:
-    image: nginx
-    volumes:
-      - ./blog/generated/public/:/usr/share/nginx/html/:cached
-    ports:
-      - 80:80
-
   hexo:
     build: dev
     volumes:
