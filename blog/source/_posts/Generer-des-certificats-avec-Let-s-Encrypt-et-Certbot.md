@@ -14,7 +14,7 @@ date: 2019-06-01 00:00:00
 
 
 Dans cet article, après une brève introduction sur ce qu'est un certificat, nous allons jouer avec le client **Certbot** qui permet de manipuler les certificats éléctroniques [Let's Encrypt](https://letsencrypt.org/). Nous verrons aussi comment renouveller automatiquement ces certificats sans interruption de service.
-
+<!-- more -->
 # Contexte
 Lorsqu'il est question de chiffrer des échanges avec un serveur (mail, web ou autre), on a non seulement besoin d'une clé de chiffrage mais aussi d'être sûr que l'entité qui fourni cette clé est bien qui elle prétend être. Les **certificats électroniques** répondent à cette problématique.
 
