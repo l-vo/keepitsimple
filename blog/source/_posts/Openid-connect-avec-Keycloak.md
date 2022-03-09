@@ -85,7 +85,8 @@ public function start(Request $request, AuthenticationException $authException =
         'client_id' => $this->clientId,
         'response_type' => 'code',
         'state' => $state,
-        // redirect_uri and scopes can also be passed
+        'scope' => 'openid roles profile email',
+        'redirect_uri' => $this->urlGenerator->generate('openid_redirecturi', [], UrlGeneratorInterface::ABSOLUTE_URL),
     ]);
 
     return new RedirectResponse(sprintf('%s?%s', $this->authorizationEndpoint, $qs));
@@ -109,11 +110,13 @@ public function authenticate(Request $request): PassportInterface
     if ($queryState === null || $queryState !== $sessionState) {
         throw new InvalidStateException();
     }
+    
+    $request->getSession()->remove(self::STATE_SESSION_KEY);
 
     $response = $this->openIdClient->getTokenFromAuthorizationCode($request->query->get('code', ''));
 
     $responseData = json_decode($response, true);
-    $jwtToken = $responseData['access_token'];
+    $jwtToken = $responseData['id_token'];
     $refreshToken = $responseData['refresh_token'];
 
     $userBadge = new UserBadge($jwtToken);
@@ -266,7 +269,7 @@ final class JwtRefreshListener implements EventSubscriberInterface
         }
 
         $responseData = json_decode($response, true);
-        $jwtToken = $responseData['access_token'];
+        $jwtToken = $responseData['id_token'];
         $refreshToken = $responseData['refresh_token'];
         $user = $this->userProvider->loadUserByIdentifier($jwtToken);
 
