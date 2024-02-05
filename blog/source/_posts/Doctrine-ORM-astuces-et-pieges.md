@@ -68,7 +68,7 @@ foreach ($categories as $category) {
 ```
 Ici deux requêtes suffisent pour obtenir tous nos enregistrements. Lorsque `findAll` est exécutée depuis le repository des produits, tous les produits sont chargés dans l'identity map. Ainsi les produits peuvent être récupérés depuis l'identity map économisant de cette façon des appels vers la base de donnée.
 
-## Vider l'entity map
+## Vider l'identity map
 Le fait que PHP libère la mémoire à la fin des scripts (et donc une fois la page affichée lorsqu'utilisé derrière un serveur web) permet de grandement limiter les problèmes de mémoire possibles. Mais lorsque l'on utilise Doctrine dans des **long-running scripts** (scripts de maintenance, etc), la mémoire peut vite devenir un problème (notament à cause du fait que les entités sont conservés dans l'identity map). Doctrine nous permet cependant de [nettoyer l'identity map](https://www.doctrine-project.org/projects/doctrine-orm/en/current/reference/working-with-objects.html#entities-and-the-identity-map). La méthode `clear` peut être utilisée sans argument pour vider complétement l'identity map ou avec une classe d'entity pour ne nettoyer que les entités du type fourni. Mais voyons les effets de bord que `clear` peut engendrer lorsqu'on ne nettoie qu'un type d'entité:
 ```php
 foreach ($categories as $category) {
