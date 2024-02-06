@@ -41,7 +41,7 @@ Et tout d'un coup **TOUS** nos clients se sont mis à être elligibles pour l'ac
 <!-- more -->
 
 ## Yaml et ses valeurs resérvées
-En Yaml, certaines valeurs sont automatiquement converties. La chaine de caractères "true" (peu importe la casse) devient le booléan true. De même pour la chaine "on". Et aussi pour la chaine "yes". Tiens ça se précise. Donc une fois parsé, notre Yaml devient:
+[En Yaml, certaines valeurs sont automatiquement converties](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell). La chaine de caractères "true" (peu importe la casse) devient le booléan true. De même pour la chaine "on". Et aussi pour la chaine "yes". Tiens ça se précise. Donc une fois parsé, notre Yaml devient:
 ```php
 print_r($targetedCustomers);
 /*
